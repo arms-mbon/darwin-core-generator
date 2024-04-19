@@ -1,0 +1,6 @@
+pandas
+biopython
+pycountry
+ncbi-taxonomist
+requests
+openpyxl

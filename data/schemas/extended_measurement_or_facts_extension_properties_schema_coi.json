@@ -1,0 +1,98 @@
+[
+    {
+        "measurementType": "submergedTime",
+        "measurementUnit": "day",
+        "measurementValue": "<NULL>",
+        "measurementTypeID": "http://vocab.nerc.ac.uk/collection/P01/current/AZDRZZ01/",
+        "measurementUnitID": "https://vocab.nerc.ac.uk/collection/P06/current/UTAA/",
+        "measurementValueID": "<NULL>"
+    },
+    {
+        "measurementType": "preservativeUsed",
+        "measurementUnit": "",
+        "measurementValue": "<NULL>",
+        "measurementTypeID": "http://vocab.nerc.ac.uk/collection/Q01/current/Q0100004/",
+        "measurementUnitID": "",
+        "measurementValueID": "<NULL>"
+    },
+    {
+        "measurementType": "lowerLimitFilterSize",
+        "measurementUnit": "micrometer",
+        "measurementValue": "<NULL>",
+        "measurementTypeID": "http://vocab.nerc.ac.uk/collection/Q01/current/Q0100011/",
+        "measurementUnitID": "https://vocab.nerc.ac.uk/collection/P06/current/UMIC/",
+        "measurementValueID": "<NULL>"
+    },
+    {
+        "measurementType": "sampleAccessionNumber",
+        "measurementUnit": "",
+        "measurementValue": "<NULL>",
+        "measurementTypeID": "",
+        "measurementUnitID": "",
+        "measurementValueID": "<NULL>"
+    },
+    {
+        "measurementType": "NCBIID",
+        "measurementUnit": "",
+        "measurementValue": "<NULL>",
+        "measurementTypeID": "",
+        "measurementUnitID": "",
+        "measurementValueID": "<NULL>"
+    },
+    {
+        "measurementType": "NCBIScientificName",
+        "measurementUnit": "",
+        "measurementValue": "<NULL>",
+        "measurementTypeID": "",
+        "measurementUnitID": "",
+        "measurementValueID": "<NULL>"
+    },
+    {
+        "measurementType": "NCBITaxonRank",
+        "measurementUnit": "",
+        "measurementValue": "<NULL>",
+        "measurementTypeID": "",
+        "measurementUnitID": "",
+        "measurementValueID": "<NULL>"
+    },
+    {
+        "measurementType": "fieldReplicateID",
+        "measurementUnit": "",
+        "measurementValue": "<NULL>",
+        "measurementTypeID": "",
+        "measurementUnitID": "",
+        "measurementValueID": "<NULL>"
+    },
+    {
+        "measurementType": "technicalReplicateID",
+        "measurementUnit": "",
+        "measurementValue": "<NULL>",
+        "measurementTypeID": "",
+        "measurementUnitID": "",
+        "measurementValueID": "<NULL>"
+    },
+    {
+        "measurementType": "originalScientificName",
+        "measurementUnit": "",
+        "measurementValue": "<NULL>",
+        "measurementTypeID": "",
+        "measurementUnitID": "",
+        "measurementValueID": "<NULL>"
+    },
+    {
+        "measurementType": "originalTaxonRank",
+        "measurementUnit": "",
+        "measurementValue": "<NULL>",
+        "measurementTypeID": "",
+        "measurementUnitID": "",
+        "measurementValueID": "<NULL>"
+    },
+    {
+        "measurementType": "originalScientificNameConfidenceLevel",
+        "measurementUnit": "",
+        "measurementValue": "<NULL>",
+        "measurementTypeID": "",
+        "measurementUnitID": "",
+        "measurementValueID": "<NULL>"
+    }
+]

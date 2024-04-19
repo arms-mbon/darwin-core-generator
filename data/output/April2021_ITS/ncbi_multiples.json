@@ -1,0 +1,34 @@
+{
+    "ARMS_Crete_2UBPC_20190924_20201211_MF500_r1:Otu1935": {
+        "265084": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "323677": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Crete_2UBPC_20190924_20201211_MF500_r1:Otu389": {
+        "79213": {
+            "AphiaID": 603997,
+            "lsid": "urn:lsid:marinespecies.org:taxname:603997",
+            "scientificname": "Cryptococcus",
+            "rank": "Genus",
+            "isTerrestrial": 1
+        },
+        "5206": {
+            "AphiaID": 603997,
+            "lsid": "urn:lsid:marinespecies.org:taxname:603997",
+            "scientificname": "Cryptococcus",
+            "rank": "Genus",
+            "isTerrestrial": 1
+        }
+    }
+}

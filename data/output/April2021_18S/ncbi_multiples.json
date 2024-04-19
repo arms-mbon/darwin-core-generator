@@ -1,0 +1,954 @@
+{
+    "ARMS_BelgiumCoast_AZBE1_20190924_20200303_SF40_r1:Otu33": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Crete_1HERP_20190612_20191011_MF500_r1:Otu523": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Crete_1HERP_20190612_20191011_SF_r1:Otu33": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Crete_1HERP_20190612_20191011_SF_r1:Otu1223": {
+        "340203": {
+            "AphiaID": 562705,
+            "lsid": "urn:lsid:marinespecies.org:taxname:562705",
+            "scientificname": "Lankesteria",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "103772": {
+            "AphiaID": 562705,
+            "lsid": "urn:lsid:marinespecies.org:taxname:562705",
+            "scientificname": "Lankesteria",
+            "rank": "Genus",
+            "isTerrestrial": null
+        }
+    },
+    "ARMS_Crete_1HERP_20190612_20191011_SF_r1:Otu362": {
+        "340203": {
+            "AphiaID": 562705,
+            "lsid": "urn:lsid:marinespecies.org:taxname:562705",
+            "scientificname": "Lankesteria",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "103772": {
+            "AphiaID": 562705,
+            "lsid": "urn:lsid:marinespecies.org:taxname:562705",
+            "scientificname": "Lankesteria",
+            "rank": "Genus",
+            "isTerrestrial": null
+        }
+    },
+    "ARMS_Crete_1HERP_20190612_20191011_SF_r1:Otu649": {
+        "340203": {
+            "AphiaID": 562705,
+            "lsid": "urn:lsid:marinespecies.org:taxname:562705",
+            "scientificname": "Lankesteria",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "103772": {
+            "AphiaID": 562705,
+            "lsid": "urn:lsid:marinespecies.org:taxname:562705",
+            "scientificname": "Lankesteria",
+            "rank": "Genus",
+            "isTerrestrial": null
+        }
+    },
+    "ARMS_Crete_1HERP_20190612_20191011_SF_r1:Otu523": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Crete_1HERP_20190612_20200210_MF500_r1:Otu33": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Crete_1HERP_20190612_20200210_MF90_r1:Otu729": {
+        "65574": {
+            "AphiaID": 586732,
+            "lsid": "urn:lsid:marinespecies.org:taxname:586732",
+            "scientificname": "Acantharia",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "238777": {
+            "AphiaID": 345868,
+            "lsid": "urn:lsid:marinespecies.org:taxname:345868",
+            "scientificname": "Phaeodaria",
+            "rank": "Subclass",
+            "isTerrestrial": null
+        },
+        "65582": {
+            "AphiaID": 235740,
+            "lsid": "urn:lsid:marinespecies.org:taxname:235740",
+            "scientificname": "Polycystina",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Crete_1HERP_20190612_20200210_MF90_r1:Otu523": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Crete_1HERP_20190612_20200618_MF90_r1:Otu523": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Crete_2UBPC_20190924_20201211_MF90_r1:Otu1241": {
+        "5475": {
+            "AphiaID": 437947,
+            "lsid": "urn:lsid:marinespecies.org:taxname:437947",
+            "scientificname": "Candida",
+            "rank": "Genus",
+            "isTerrestrial": 1
+        },
+        "1535326": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Gdynia_GDY1_20190619_20191029_MF500_r1:Otu1437": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Gdynia_GDY1_20190619_20191029_MF500_r1:Otu1762": {
+        "239360": {
+            "AphiaID": 172365,
+            "lsid": "urn:lsid:marinespecies.org:taxname:172365",
+            "scientificname": "Acineta",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "78690": {
+            "AphiaID": 172365,
+            "lsid": "urn:lsid:marinespecies.org:taxname:172365",
+            "scientificname": "Acineta",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Gdynia_GDY1_20190619_20191029_MF500_r1:Otu152": {
+        "46600": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "1227177": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Gdynia_GDY1_20190619_20191029_MF500_r1:Otu1742": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Gdynia_GDY1_20190619_20191029_MF500_r1:Otu324": {
+        "27803": {
+            "AphiaID": 135259,
+            "lsid": "urn:lsid:marinespecies.org:taxname:135259",
+            "scientificname": "Cyanea",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "138109": {
+            "AphiaID": 135259,
+            "lsid": "urn:lsid:marinespecies.org:taxname:135259",
+            "scientificname": "Cyanea",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Laeso_Laeso1_20190819_20200811_MF100_r1:Otu163": {
+        "10197": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "1003038": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "516519": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Laeso_Laeso1_20190819_20200811_MF100_r1:Otu1794": {
+        "65574": {
+            "AphiaID": 586732,
+            "lsid": "urn:lsid:marinespecies.org:taxname:586732",
+            "scientificname": "Acantharia",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "238777": {
+            "AphiaID": 345868,
+            "lsid": "urn:lsid:marinespecies.org:taxname:345868",
+            "scientificname": "Phaeodaria",
+            "rank": "Subclass",
+            "isTerrestrial": null
+        },
+        "65582": {
+            "AphiaID": 235740,
+            "lsid": "urn:lsid:marinespecies.org:taxname:235740",
+            "scientificname": "Polycystina",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Laeso_Laeso1_20190819_20200811_MF100_r1:Otu258": {
+        "257503": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "2547639": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Laeso_Laeso1_20190819_20200811_MF100_r1:Otu1458": {
+        "65574": {
+            "AphiaID": 586732,
+            "lsid": "urn:lsid:marinespecies.org:taxname:586732",
+            "scientificname": "Acantharia",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "238777": {
+            "AphiaID": 345868,
+            "lsid": "urn:lsid:marinespecies.org:taxname:345868",
+            "scientificname": "Phaeodaria",
+            "rank": "Subclass",
+            "isTerrestrial": null
+        },
+        "65582": {
+            "AphiaID": 235740,
+            "lsid": "urn:lsid:marinespecies.org:taxname:235740",
+            "scientificname": "Polycystina",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Laeso_Laeso1_20190819_20200811_MF100_r1:Otu1770": {
+        "120649": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "104751": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Laeso_Laeso1_20190819_20200811_MF100_r1:Otu324": {
+        "27803": {
+            "AphiaID": 135259,
+            "lsid": "urn:lsid:marinespecies.org:taxname:135259",
+            "scientificname": "Cyanea",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "138109": {
+            "AphiaID": 135259,
+            "lsid": "urn:lsid:marinespecies.org:taxname:135259",
+            "scientificname": "Cyanea",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Laeso_Laeso1_20190819_20200811_MF500_r1:Otu163": {
+        "10197": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "1003038": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "516519": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Laeso_Laeso1_20190819_20200811_MF500_r1:Otu324": {
+        "27803": {
+            "AphiaID": 135259,
+            "lsid": "urn:lsid:marinespecies.org:taxname:135259",
+            "scientificname": "Cyanea",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "138109": {
+            "AphiaID": 135259,
+            "lsid": "urn:lsid:marinespecies.org:taxname:135259",
+            "scientificname": "Cyanea",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Laeso_Laeso3_20190819_20200811_MF100_r1:Otu163": {
+        "10197": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "1003038": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "516519": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Roscoff_BasBloS2_20190612_20200528_MF100_r1:Otu166": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Roscoff_BasBloS2_20190612_20200528_MF100_r1:Otu33": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Roscoff_BasBloS2_20190612_20200528_MF100_r1:Otu258": {
+        "257503": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "2547639": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Roscoff_BasBloS2_20190612_20200528_MF100_r1:Otu1540": {
+        "257503": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "2547639": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Roscoff_BasBloS2_20190612_20200528_MF100_r1:Otu1955": {
+        "340203": {
+            "AphiaID": 562705,
+            "lsid": "urn:lsid:marinespecies.org:taxname:562705",
+            "scientificname": "Lankesteria",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "103772": {
+            "AphiaID": 562705,
+            "lsid": "urn:lsid:marinespecies.org:taxname:562705",
+            "scientificname": "Lankesteria",
+            "rank": "Genus",
+            "isTerrestrial": null
+        }
+    },
+    "ARMS_Roscoff_BasBloS2_20190612_20200528_MF100_r1:Otu737": {
+        "340203": {
+            "AphiaID": 562705,
+            "lsid": "urn:lsid:marinespecies.org:taxname:562705",
+            "scientificname": "Lankesteria",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "103772": {
+            "AphiaID": 562705,
+            "lsid": "urn:lsid:marinespecies.org:taxname:562705",
+            "scientificname": "Lankesteria",
+            "rank": "Genus",
+            "isTerrestrial": null
+        }
+    },
+    "ARMS_Roscoff_BasBloS2_20190612_20200528_MF100_r1:Otu152": {
+        "46600": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "1227177": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Roscoff_BasBloS2_20190612_20200528_MF100_r1:Otu147": {
+        "46600": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "1227177": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Roscoff_BasBloS2_20190612_20200528_MF100_r1:Otu1972": {
+        "332376": {
+            "AphiaID": 148963,
+            "lsid": "urn:lsid:marinespecies.org:taxname:148963",
+            "scientificname": "Odontella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "2838": {
+            "AphiaID": 148963,
+            "lsid": "urn:lsid:marinespecies.org:taxname:148963",
+            "scientificname": "Odontella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Roscoff_BasBloS2_20190612_20200528_MF500_r1:Otu166": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Roscoff_BasBloS2_20190612_20200528_MF500_r1:Otu33": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Roscoff_BasBloS2_20190612_20200528_MF500_r1:Otu523": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Roscoff_BasBloS2_20190612_20200528_MF500_r1:Otu258": {
+        "257503": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "2547639": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Roscoff_BasBloS3_20190612_20200529_MF100_r1:Otu258": {
+        "257503": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "2547639": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Roscoff_BasBloS3_20190612_20200529_MF100_r1:Otu152": {
+        "46600": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "1227177": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Roscoff_BasBloS3_20190612_20200529_MF100_r1:Otu147": {
+        "46600": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "1227177": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Roscoff_BasBloS3_20190612_20200529_MF100_r1:Otu1972": {
+        "332376": {
+            "AphiaID": 148963,
+            "lsid": "urn:lsid:marinespecies.org:taxname:148963",
+            "scientificname": "Odontella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "2838": {
+            "AphiaID": 148963,
+            "lsid": "urn:lsid:marinespecies.org:taxname:148963",
+            "scientificname": "Odontella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Svalbard_S1_20180706_20190806_MF500_ETOH_r1:Otu480": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Svalbard_S1_20180706_20190806_SF40_ETOH_r1:Otu523": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Svalbard_S1_20190806_20200804_MF100_r1:Otu489": {
+        "10197": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "1003038": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "516519": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Svalbard_S1_20190806_20200804_MF100_r1:Otu523": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Svalbard_S1_20190806_20200804_MF500_r1:Otu489": {
+        "10197": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "1003038": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "516519": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Svalbard_S1_20190806_20200804_MF500_r1:Otu743": {
+        "38832": {
+            "AphiaID": 134533,
+            "lsid": "urn:lsid:marinespecies.org:taxname:134533",
+            "scientificname": "Micromonas",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "543311": {
+            "AphiaID": 134533,
+            "lsid": "urn:lsid:marinespecies.org:taxname:134533",
+            "scientificname": "Micromonas",
+            "rank": "Genus",
+            "isTerrestrial": null
+        }
+    },
+    "ARMS_Svalbard_S1_20190806_20200804_MF500_r1:Otu523": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Svalbard_S2_20180708_20190805_MF100_ETOH_r1:Otu2177": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Svalbard_S2_20180708_20190805_MF100_ETOH_r1:Otu1437": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Svalbard_S2_20180708_20190805_MF100_ETOH_r1:Otu1389": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Svalbard_S2_20180708_20190805_MF100_ETOH_r1:Otu152": {
+        "46600": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "1227177": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Svalbard_S2_20180708_20190805_MF100_ETOH_r1:Otu1742": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Svalbard_S2_20190805_20200801_SF40_r1:Otu743": {
+        "38832": {
+            "AphiaID": 134533,
+            "lsid": "urn:lsid:marinespecies.org:taxname:134533",
+            "scientificname": "Micromonas",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "543311": {
+            "AphiaID": 134533,
+            "lsid": "urn:lsid:marinespecies.org:taxname:134533",
+            "scientificname": "Micromonas",
+            "rank": "Genus",
+            "isTerrestrial": null
+        }
+    }
+}

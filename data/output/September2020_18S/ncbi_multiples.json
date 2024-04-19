@@ -1,0 +1,233 @@
+{
+    "ARMS_Koster_VH1_20190527_20200716_MF100_r1:Otu255": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH1_20190527_20200716_MF100_r1:Otu258": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH1_20190527_20200716_MF100_r1:Otu221": {
+        "257503": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "2547639": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH1_20190527_20200716_MF100_r1:Otu614": {
+        "340203": {
+            "AphiaID": 562705,
+            "lsid": "urn:lsid:marinespecies.org:taxname:562705",
+            "scientificname": "Lankesteria",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "103772": {
+            "AphiaID": 562705,
+            "lsid": "urn:lsid:marinespecies.org:taxname:562705",
+            "scientificname": "Lankesteria",
+            "rank": "Genus",
+            "isTerrestrial": null
+        }
+    },
+    "ARMS_Koster_VH1_20190527_20200716_MF100_r1:Otu628": {
+        "27803": {
+            "AphiaID": 135259,
+            "lsid": "urn:lsid:marinespecies.org:taxname:135259",
+            "scientificname": "Cyanea",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "138109": {
+            "AphiaID": 135259,
+            "lsid": "urn:lsid:marinespecies.org:taxname:135259",
+            "scientificname": "Cyanea",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20190527_20200716_MF500_r1:Otu221": {
+        "257503": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "2547639": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20190527_20200716_MF500_r1:Otu207": {
+        "46600": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "1227177": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20190527_20200716_SF40_r1:Otu258": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20190527_20200716_SF40_r1:Otu175": {
+        "65574": {
+            "AphiaID": 586732,
+            "lsid": "urn:lsid:marinespecies.org:taxname:586732",
+            "scientificname": "Acantharia",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "238777": {
+            "AphiaID": 345868,
+            "lsid": "urn:lsid:marinespecies.org:taxname:345868",
+            "scientificname": "Phaeodaria",
+            "rank": "Subclass",
+            "isTerrestrial": null
+        },
+        "65582": {
+            "AphiaID": 235740,
+            "lsid": "urn:lsid:marinespecies.org:taxname:235740",
+            "scientificname": "Polycystina",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20190527_20200716_SF40_r1:Otu221": {
+        "257503": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "2547639": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20190527_20200716_SF40_r1:Otu207": {
+        "46600": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "1227177": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20190527_20200716_SF40_r1:Otu614": {
+        "340203": {
+            "AphiaID": 562705,
+            "lsid": "urn:lsid:marinespecies.org:taxname:562705",
+            "scientificname": "Lankesteria",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "103772": {
+            "AphiaID": 562705,
+            "lsid": "urn:lsid:marinespecies.org:taxname:562705",
+            "scientificname": "Lankesteria",
+            "rank": "Genus",
+            "isTerrestrial": null
+        }
+    },
+    "ARMS_Koster_VH3_20190527_20200716_SF40_r1:Otu255": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH3_20190527_20200716_SF40_r1:Otu258": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    }
+}
