@@ -9,6 +9,7 @@ import requests
 import time
 import traceback
 from Bio import SeqIO
+from copy import deepcopy
 from io import StringIO
 from pycountry import countries
 from darwin_core.dwca import DwCArchive
@@ -189,18 +190,15 @@ class PipelineCOI(PipelineITS):
 
     def fetch_id_from_name(self, name):
         if not name in self.name2id.keys():
-            try:
-                with contextlib.redirect_stdout(StringIO()):
-                    from arms_toolbox.ncbi_taxonomist_wrapper import resolve 
-                    import sys
-                    sys_exit_copy = sys.exit.copy()
-                    sys.exit = lambda: None
-                    ncbi_id = resolve(name)
-                    sys.exit = sys_exit_copy
-                    time.sleep(2)  # XXX
-                    self.name2id[name] = ncbi_id
-            except Exception:
-                self.name2id[name] = None
+            with contextlib.redirect_stdout(StringIO()):
+                from arms_toolbox.ncbi_taxonomist_wrapper import resolve 
+                import sys
+                sys_exit_copy = deepcopy(sys.exit)
+                sys.exit = lambda *args, **kwargs: None
+                ncbi_id = resolve(name)
+                sys.exit = sys_exit_copy
+                time.sleep(2)  # XXX
+                self.name2id[name] = ncbi_id
         return self.name2id[name]
 
     def update_cache(self, otu, df_pema_tax):

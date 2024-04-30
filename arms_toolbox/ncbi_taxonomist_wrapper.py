@@ -26,15 +26,18 @@ def resolve(name):
     args.xml = False
     args.mapping = False
 
-    ncbitaxonomist.ncbitaxonomist.configure(args)
-    nt = ncbitaxonomist.ncbitaxonomist.NcbiTaxonomist(args.database)
-    txresolver = ncbitaxonomist.resolve.resolver.Resolver(nt)
-    txresolver.cache.taxa.taxa = {}
-    txresolver.resolve(
-        taxids=ncbitaxonomist.payload.taxid.TaxidPayload(args.taxids),
-        names=ncbitaxonomist.payload.name.NamePayload(args.names),
-        mapping=args.mapping,
-        remote=args.remote,
-    )
-    ncbi_id = [k for k, _ in txresolver.cache.taxa.taxa.items()][0]
-    return ncbi_id
+    try:
+        ncbitaxonomist.ncbitaxonomist.configure(args)
+        nt = ncbitaxonomist.ncbitaxonomist.NcbiTaxonomist(args.database)
+        txresolver = ncbitaxonomist.resolve.resolver.Resolver(nt)
+        txresolver.cache.taxa.taxa = {}
+        txresolver.resolve(
+            taxids=ncbitaxonomist.payload.taxid.TaxidPayload(args.taxids),
+            names=ncbitaxonomist.payload.name.NamePayload(args.names),
+            mapping=args.mapping,
+            remote=args.remote,
+        )
+        ncbi_id = [k for k, _ in txresolver.cache.taxa.taxa.items()][0]
+        return ncbi_id
+    except Exception:
+        return None
