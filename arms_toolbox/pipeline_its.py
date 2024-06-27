@@ -24,7 +24,16 @@ class PipelineITS(Pipeline):
         self.aphia_multiples = {}  # ncbi_tax_ids with multiple aphia_ids
     
     def run(self):
-        df_pema = pd.read_excel(f"https://raw.githubusercontent.com/arms-mbon/data_workspace/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_{self.time_window}_{self.genomic_region}_noBlank.xlsx")
+
+        taxonomic_assignment_folder = "updated_taxonomic_assignments" if self.genomic_region == "18S" else "taxonomic_assignments"
+        file_addendum = "_TaxonomyCurated" if self.genomic_region == "18S" else ""
+
+        full_file_name = f"https://raw.githubusercontent.com/arms-mbon/data_workspace/main/analysis_data/from_pema/processing_batch1/{taxonomic_assignment_folder}/Extended_final_table_{self.time_window}_{self.genomic_region}_noBlank{file_addendum}.xlsx"
+
+        if self.genomic_region == "18S":
+            full_file_name.replace(".xlsx",".csv")
+
+        df_pema = pd.read_excel(full_file_name)
         df_observatory = pd.read_csv("https://raw.githubusercontent.com/arms-mbon/data_workspace/main/qualitycontrolled_data/combined/combined_ObservatoryData.csv")
         df_omics = pd.read_csv("https://raw.githubusercontent.com/arms-mbon/data_workspace/main/qualitycontrolled_data/combined/combined_OmicsData.csv")
         df_sampling = pd.read_csv("https://raw.githubusercontent.com/arms-mbon/data_workspace/main/qualitycontrolled_data/combined/combined_SamplingEventData.csv")
