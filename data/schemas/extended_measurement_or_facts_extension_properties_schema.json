@@ -59,7 +59,7 @@
         "measurementType": "fieldReplicateID",
         "measurementUnit": "",
         "measurementValue": "<NULL>",
-        "measurementTypeID": "",
+        "measurementTypeID": "http://vocab.nerc.ac.uk/collection/P01/current/IDSPRE01",
         "measurementUnitID": "",
         "measurementValueID": "<NULL>"
     },
