@@ -30,15 +30,17 @@ class PipelineITS(Pipeline):
 
         if self.genomic_region == "ITS":
             full_file_name = f"https://raw.githubusercontent.com/arms-mbon/data_workspace/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_{self.time_window}_{self.genomic_region}_noBlank.xlsx"
+            df_pema = pd.read_excel(full_file_name)
         elif self.genomic_region == "COI":
             full_file_name = f"https://raw.githubusercontent.com/arms-mbon/data_workspace/main/analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/Extended_final_table_{self.time_window}_{self.genomic_region}_noBlank_TaxonomyFull.csv"
+            df_pema = pd.read_csv(full_file_name)
         else:
+            df_pema = pd.read_csv(full_file_name)
             full_file_name = f"https://raw.githubusercontent.com/arms-mbon/data_workspace/main/analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/Extended_final_table_{self.time_window}_{self.genomic_region}_noBlank_TaxonomyCurated.csv"
             
         #if self.genomic_region == "18S":
         #    full_file_name.replace(".xlsx",".csv")
 
-        df_pema = pd.read_excel(full_file_name)
         df_observatory = pd.read_csv("https://raw.githubusercontent.com/arms-mbon/data_workspace/main/qualitycontrolled_data/combined/combined_ObservatoryData.csv")
         df_omics = pd.read_csv("https://raw.githubusercontent.com/arms-mbon/data_workspace/main/qualitycontrolled_data/combined/combined_OmicsData.csv")
         df_sampling = pd.read_csv("https://raw.githubusercontent.com/arms-mbon/data_workspace/main/qualitycontrolled_data/combined/combined_SamplingEventData.csv")
