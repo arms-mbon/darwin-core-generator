@@ -2,6 +2,7 @@ from arms_toolbox.pipeline_its import PipelineITS
 from arms_toolbox.pipeline_18s import Pipeline18S
 from arms_toolbox.pipeline_coi import PipelineCOI
 
+"""
 # ITS
 print("PipelineITSApril2021")
 PipelineITS(
@@ -21,6 +22,7 @@ Pipeline18S(
     time_window="April2021",
     aligned_assignment_url="https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c30492304947055810",
 ).run()
+
 
 print("Pipeline18SJanuary2020")
 Pipeline18S(
@@ -46,6 +48,12 @@ Pipeline18S(
     aligned_assignment_url="https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5c304a04ec570416353",
 ).run()
 
+print("Pipeline18SARMS_Gdynia_GDY1_20180813_20191029_SF38_DMSO")
+Pipeline18S(
+    time_window="ARMS_Gdynia_GDY1_20180813_20191029_SF38_DMSO",
+    aligned_assignment_url="https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_65ddecfdd4483691581806",
+).run()
+
 print("Pipeline18SSeptember2020")
 Pipeline18S(
     time_window="September2020",
@@ -58,19 +66,14 @@ Pipeline18S(
     aligned_assignment_url="https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_65ddecfdd3c8b943104041",
 ).run()
 
-print("Pipeline18SARMS_Gdynia_GDY1_20180813_20191029_SF38_DMSO")
-Pipeline18S(
-    time_window="ARMS_Gdynia_GDY1_20180813_20191029_SF38_DMSO",
-    aligned_assignment_url="https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_65ddecfdd4483691581806",
-).run()
-
+"""
 # COI
 print("PipelineCOIApril2021")
 PipelineCOI(
     time_window="April2021",
     aligned_assignment_url="https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_64e5aec1c61d2304932779",
 ).run()
-
+"""
 print("PipelineCOIJanuary2020")
 PipelineCOI(
     time_window="January2020",
@@ -112,5 +115,5 @@ PipelineCOI(
     time_window="ARMS_Gdynia_GDY1_20180813_20191029_SF38_DMSO",
     aligned_assignment_url="https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_65ddecfdd3dbd317188875",
 ).run()
-
+"""
 print("process finished")
