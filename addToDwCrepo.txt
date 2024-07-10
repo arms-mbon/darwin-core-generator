@@ -1,0 +1,209 @@
+QC summary
+
+- My 4 stations are HCMR-1, NRMCB, BPNS, RFORMOSA
+ - did a new harvest+QC on tuesday but unfortunately failed and with Bram off for the long-term, I have to wait for Marc to get back to figure out what is not working
+   however, I looked at those 4 stations and they do have triples, so the QC passed
+ - some small things still to do on the CSV2Triple to accommodate recent changes to the logsheets, will be done when Laurian comes back (July)   
+
+- Other stations
+ - report from Melina L (https://onedrive.live.com/edit?id=5CD8EF69302375EB!36295&resid=5CD8EF69302375EB!36295&ithint=file%2cxlsx&authkey=!AOtnaI9YdQ54ZH8&wdo=2&cid=5cd8ef69302375eb)
+   most stations have a few things still need correcting and in particular a few for the 2021 samples which are part of Batch 1
+ - once they pass, getting triples is fast
+ - and once they pass, submitting related sequences to ENA is fast
+
+
+ENA
+
+- With Bram off due to a long-term sickness+leave, I am going to have to take this over, which means I need to learn a few things. however, is automated so should be easy
+- main holdups have been (1) ENA requires correct metadata (2) need to have sample accessions OA for Genoscope to upload the sequences
+- For batch 001 there are 93 samples ready to go, but we only have currently 13 sample accessions. Of those 13, 2 that Bram showed me bfeore leaving needed manual corrections to the metadata (tidal stage, which we will change, and something else). 
+  I would like to work with someone (Christina) to get the rest ofthe 92 sample accessions made, next week. I can figure out Bram's workflow but want someone to do the manual corrections and check the results. 
+  We can then ask Genoscope to upload all 93 samples (from 2021, most Wa, some So, from BPNS, VB. NRMCB, Rformosa, OOB, ROSKOGO, IUI, HCMR, AAOT, OSD. PIE, EMT21)
+- So we definitely need the QC to be 100% for the samples from 2021 July-Sept 
+- Does anyone know how Genoscope will tell us the run accession numbers?
+
+
+Updating the logsheets: Katrina do BPNS and ask HCMR to do the rest
+- pigments and phaeopigments -> single value, will be a float, and the method has to be updated to "describe what type of pigment it is" 
+- ARMS ones -> according to ARMS notes
+- FYI review of the lists left
+  biomass -> dont think can change; this list will need exploding as it can consist of different types of objects, which will need vocab terms for them. So QC should put in log if this has been filled for a station
+  chem_administration -> dont think can change; we could have this as a simple list and not link the values to vocabs, or explode. So QC should put in log if this has been filled for a station
+  n_alkanes -> dont think can change; we could have this as a simple list and not link the values to vocabs, or explode. So QC should put in log if this has been filled for a station
+  organism_count -> dont think can change; this list will need exploding as it can consist of different types of organisms, which will need vocab terms for them. So QC should put in log if this has been filled for a station
+  env_broad_biome and local -> dont think can change; this is a simple list, no need to explode
+  organisation -> dont think can change; this is a simple list, no need to explode
+  env_material -> dont think can change; this is a simple list, no need to explode
+
+
+
+What can Tosca do -> sent email on July 27
+- gather these metadata to be added to emo bon ro-crates:
+ - data owner - EMBRC or the station or emo bon?
+ - organisation - EMBRC but is there some ID for it?
+ - data contact - embon email address?
+- provide a review of the data landing page, and give me names, roles, and images of the "team" that should be on it, give me any pubs you want on there also
+- find terms in a vocab (BODC is the first port-of-call)  
+ - "biomass" (just that, no "with this or that method and this or that organism" or whatever)
+ - "n_alkanes" 
+ - "organism_count" 
+ - "samp_collect_device"
+ - "samp_size_mass" 
+- should talk to L and B how to flag these being filled, in the log file, so I know when we have to work on these
+- check with the OpCo if we really still want these as a "list" in the spreadsheets, or just a single value with the details in the _method: biomass, chem_administration, n_alkanes, organism_count
+- review the definitions tab of the spreadsheets because sometimes the example does not follow the definition
+- for the logsheet terms as defined on https://github.com/emo-bon/observatory-profile/blob/main/logsheet_schema_extended.csv: see if in https://genomicsstandardsconsortium.github.io/mixs/, if in any of those checklists in there,
+  there are these terms (does not have to be exactly written like this) taken from the logsheets
+    comm_samp, scientific_name, time_fi,tidal_stage, store_person, size_frac, ship_date, sampl_person, samp_mat_process, samp_size_mass, sample_collect_device, sample accession number, project accession number, or just accession number, project name, organization, all the loc_XX_XX in the logsheets 
+  see the Description tab of any logsheet to see the definition of these terms, that will help in the search
+  the terms will have a URL that looks like this: https://genomicsstandardsconsortium.github.io/mixs/0000013/
+- find ENVO or BODC or similar terms for phytoplankton; diatoms; dinoflagellates; coccolitrophores; other flagellates:
+
+
+QC updates - for L and Bram's code
+- if the orcid does not have the given baseURL, then add it
+- if "expected" then leave value out of triples
+- if list, add to logsheet and we have to figure out what to do
+- if failure and comment blank, leave out (treat as an NA)
+- if NA in a value (not just the method), then leave out
+
+
+For the logsheets schema file
+- all rows in yellow = ask L if we need vocabs for those or if they are OK in the ttl
+- for "replicate" can add the new BODC term
+
+
+Laurian, Christina, and myself
+ - review the ENA checklist and turn it into a table that we can then add to the handbook/DMP. 
+  Laurian - will she need this info for her ontology, but with semantics added?
+  We are using ERC000021 (sediment) and ERC000024 (water), and we are adding 
+  Looking at one of the soil and one water XML we have, we have the following terms
+
+For SO
+<SAMPLE accession="ERS16590021" alias="EMOBON00086"
+center_name="European Marine Biological Resource Centre">
+<PRIMARY_ID>ERS16590021</PRIMARY_ID>
+<SUBMITTER_ID namespace="European Marine Biological Resource Centre">EMOBON00086</SUBMITTER_ID>
+<TITLE>EMOBON_BPNS_So_210825_micro_1</TITLE>
+<TAXON_ID>412755</TAXON_ID>
+<SCIENTIFIC_NAME>marine sediment metagenome</SCIENTIFIC_NAME>
+<DESCRIPTION>EMOBON metagenome sediment sample from station BPNS collected on 2021-08-25 community collected micro</DESCRIPTION>
+<TAG>ENA-CHECKLIST</TAG> <VALUE>ERC000021</VALUE>
+<TAG>elevation</TAG> <VALUE>0</VALUE> <UNITS>m</UNITS>
+<TAG>project name</TAG><VALUE>EMOBON</VALUE>
+<TAG>nucleic acid extraction</TAG> <VALUE>https://www.qiagen.com/us/products/discovery-and-translational-research/dna-rna-purification/dna-purification/microbial-dna/dneasy-powersoil-pro-kit?catno=47016</VALUE>
+<TAG>nucleic acid amplification</TAG> <VALUE>metag</VALUE> !!!!!!!! IS THIS CLEAR TO EVERYONE????????
+<TAG>target gene</TAG> <VALUE>metag</VALUE>
+<TAG>target subfragment</TAG> <VALUE>metag</VALUE>
+<TAG>pcr primers</TAG> <VALUE>metag</VALUE>
+<TAG>pcr conditions</TAG> <VALUE>DNA Polymerase:taq Q5;NoPCRs:2;PCRvolume:30;Nocycles:10</VALUE>
+<TAG>sequence quality check</TAG> <VALUE>manual</VALUE> <TAG>relevant standard operating procedures</TAG>  <VALUE>Prod_ILL_BqADN_NEBUII_151_v4; Bq NEB Next Ultra II</VALUE>
+<TAG>collection date</TAG><VALUE>2021-08-25</VALUE>
+<TAG>geographic location (country and/or sea)</TAG> <VALUE>Belgium</VALUE>
+<TAG>geographic location (latitude)</TAG><VALUE>51.433331</VALUE><UNITS>DD</UNITS>
+<TAG>geographic location (longitude)</TAG> <VALUE>2.808331</VALUE> <UNITS>DD</UNITS> 
+<TAG>geographic location (region and locality)</TAG> <VALUE>North Sea</VALUE>
+<TAG>geographic location (ocean)</TAG> <VALUE>North Atlantic Ocean</VALUE>
+<TAG>geographic location (locality)</TAG> <VALUE>Belgian part of the North Sea</VALUE>
+<TAG>depth</TAG> <VALUE>20.54</VALUE> <UNITS>m</UNITS>
+<TAG>broad-scale environmental context</TAG> <VALUE>marine biome [ENVO:00000447];marine benthic biome[ENVO_01000024]</VALUE>
+<TAG>local environmental context</TAG> <VALUE>shallow_marine_sediment_[ENVO:03000034]</VALUE> !!!!!! FORMULATED WRONG EXTRA _ !!!!!
+<TAG>environmental medium</TAG> <VALUE>sediment [ENVO:00002007]</VALUE>
+<TAG>sample material processing</TAG> <VALUE>SoSOP3</VALUE> !!!!!MPROVE BY ADDING HANDBOOK
+<TAG>sample collection device</TAG><VALUE>Van Veen Grab</VALUE>
+<TAG>sample collection method</TAG> <VALUE>SoSOP3</VALUE> !!!!!MPROVE BY ADDING HANDBOOK
+<TAG>dissolved oxygen</TAG> <VALUE>7.19</VALUE><UNITS>µmol/kg</UNITS>
+<TAG>salinity</TAG><VALUE>33.348</VALUE><UNITS>psu</UNITS>
+<TAG>pressure</TAG><VALUE>1.01100419442</VALUE><UNITS>atm</UNITS>
+<TAG>tidal stage</TAG> <VALUE>low</VALUE> !!! THIS WAS A PROBLEM
+<TAG>total depth of water column</TAG><VALUE>26</VALUE><UNITS>m</UNITS>
+<TAG>sea surface temperature</TAG><VALUE>18.919</VALUE> <UNITS>ºC</UNITS>
+<TAG>dna concentration</TAG><VALUE>0.4</VALUE><UNITS>ng/μL</UNITS>
+
+For Wa only also had
+<TAG>library reads sequenced</TAG> <VALUE>87844664.0</VALUE>
+<TAG>sequencing method</TAG><VALUE>Illumina NovaSeq 6000</VALUE>
+<TAG>amount or size of sample collected</TAG><VALUE>10</VALUE> <UNITS>L</UNITS>
+<TAG>density</TAG><VALUE>1.024031</VALUE><UNITS>g/m3</UNITS>
+<TAG>sample storage temperature</TAG><VALUE>-80</VALUE><UNITS>°C</UNITS>
+<TAG>sample storage location</TAG><VALUE>MSO LifeWatch Lab -80 Freezer</VALUE>
+<TAG>conductivity</TAG><VALUE>42401.000</VALUE><UNITS>mS/cm</UNITS>
+<TAG>temperature</TAG><VALUE>16.817</VALUE> <UNITS>ºC</UNITS>
+<TAG>nitrate</TAG><VALUE>3.03</VALUE><UNITS>µmol/L</UNITS>
+<TAG>nitrite</TAG><VALUE>0.2</VALUE> <UNITS>µmol/L</UNITS>
+<TAG>silicate</TAG> <VALUE>-0.53</VALUE><UNITS>µmol/L</UNITS>
+<TAG>size fraction</TAG> <VALUE>3-200</VALUE><UNITS>μm</UNITS>
+<TAG>sea surface salinity</TAG><VALUE>33.088</VALUE><UNITS>psu</UNITS>
+
+Looking then at the checklists themselves, are there these same differences in what is in there? 
+-> So also has sample storage temperture/location in it, and looking at one of the other Sos, I see that in there also, so maybe just not in all/value not in logsheet?
+-> could add particle classification/sediment type, to which of our metadata would this map?
+-> So has density, but do we have that for So? NO
+-> sequencing method is not in either checklist, so why then do we only have it in Wa? OK, it is in So also, just not the one I looked at
+-> there is a term "negative control type" and "positive control type" which values are "the substance or equipment used as a negative control" and "the substance, equipment, ... used to verify that a process ...delivers a true positive" hmm, which is not exactly the same. 
+-> experimental factor accepts ENVO or OBI terms, perhaps they have one for blank and mock? Have passed this info on to Christine
+--> probably should review all the ones already in there and upload new XMLs to them all, since we want to add tidal stage detail and blanks/mocks also
+    this, then, is not something that Tosca can help with
+
+
+
+Note, M30 will be revision of service catalogue and we should keep an eye on that in case data stuff changes
+an installation can be >=1 service, it is defined as a part or a service of and RI that could be used independently from the rest
+aquaexcel has 55 service types, embrc 26, anaee 43, metrofood 5 (?), 
+they have come up with 12 main categories of service based on embrc and elixir ones, and started on subcategories
+   we def need this spreadsheet as well 
+remind davide that final reporting is NOT the end, creating a metadata record and datast upload is the end
+   PLEASE write this in the TA handbook
+
+MBO WP3 - add back in the original download link to the portal and email them to ask if they have metadata
+schedule reminder email to aquaserv access officers
+
+
+To run this code on a windows machine
+1- You need to clone this repository using e.g. Github Desktop. It is important that you have a complete copy of this entire repo and its folders and subfolders, else the code will not run
+2- Make sure you have python 3.12 installed. Because of the wonderful way computers work, if you update to that version (download and install it directly from a website) and expect python to have been updated in your working environment, you can forget it.
+   Operating systems are designed by twisted minds, so you should get an expert to do it for you. We had to delete old versions, install the new version - remembering to tell it to update my PATH - and then reboot
+   Always check by typing $python --version from whatever terminal you will run the code from 
+3- Then I used GHD to clone this repo and asked to open it (from the GHD) using y default editor, being VS Code. 
+4- In VS code I then selected the GitBash terminal, not the default powershell 
+5- I want to run this in a virtual environment, so that it is isolated from everything else I do. There I need "venv", which fortunately I had, but if you don't then you can pipe install it from the terminal in VSC or any other terminal
+6- Now set up the virtual env, calling it "venv" (or you could call it "jane" but then you will forget later what "jane" is). 
+   $ python -m venv venv 
+   in your GitBash termin in VSC; first venv=the module, second=the name
+   You will see a directory called "venv" has been created in this repo
+7- Now to run that virtual environment
+   $source venv/Scripts/activate
+   Note: as long as you don't delete this entire directory/repo from your computer, this virtual envrionment will stay, so when you later exit it, go home, come back, you can start again in your VCS in this venv. 
+8- The first time, I need to 
+   $pip install requirements.txt
+   to get the necessary libraries in place
+9- Now I run the code with 
+   $ python main.py
+
+Note that the code works on files that are in the GH repo data_workspace, but its outputs are send to this repo to the data/outputs folder.
+
+9- Exit XXX
+10- push back to GH when ready. Remember to set a .gitignore to ignore the "venv" directory XXXX
+
+Note: This code is heavily tuned to our use case, being taking a certain set of PEMA outputs, combined with event logsheet metadata 
+and turning those into DwC. There are many ifs and buts in here that are specific to these data
+
+A note about the ids in the various files
+Extended_final_table (col 1)
+- For 18S and ITS, it is Otu###
+- For COI it is ASV_##:#########(long number)
+Fasta files (these are read in via main.py)
+- For 18S and ITS it is the same Otu###
+- for COI it is (grrrrr!) #######(long number)_####, i.e. the second part of that from the Extended_final_table with a _(number) appended
+Tax_assigments
+- For 18S and ITS there is no such file
+- For COI it is the same as in the fasta file
+
+The emof schema can be optimised to the gene type.
+This code is designed to be run over several input files whoes name differ by gene type (18S and ITS) and date (e.g. July2020).
+The output is added to data/outputs.
+Checks for duplicates and missing information are performed - for duplicates, a warning is logged and the first only is taken.
+A check on ENA to find the sample accession numbers for the run accession numbers that we have in the omics input is done.
+ITS, 18S, and COI differ in that 
+- the input files come from different repo folders
+- COI has more in the emof and takes that from a PEMA file that only exists for this one
