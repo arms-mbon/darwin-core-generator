@@ -72,10 +72,10 @@ To run this code on a windows machine:
  * Then I used GHD to clone this repo and I asked to open it (from the GHD) using the default editor, being VS Code for me.
  * In VS code I then selected the GitBash terminal, not the default powershell 
  * I want to run this in a virtual environment, so that it is isolated from everything else I do. There I need "venv", which fortunately I had, but if you don't then you can "pip install" it from the terminal in VSC or any other terminal
- * Now set up the virtual env, calling it "venv" (or you could call it "jane") with the command ```sh python -m venv venv``` in your GitBash termin in VSC (the first venv=the module, second=the name). You will see a directory called "venv" has been created in this repo
- * Now to run that virtual environment, type ```sh source venv/Scripts/activate```. Note: as long as you don't delete this entire directory/repo from your computer, this virtual envrionment will stay, so when you later exit it, go home, come back, you can start again in this venv. 
- * The first time running the code, I need to type ```sh pip install requirements.txt``` to get the necessary libraries in place
- * Then I run the code with ```sh python main.py```
+ * Now set up the virtual env, calling it "venv" (or you could call it "jane") with the command ``` python -m venv venv``` in your GitBash termin in VSC (the first venv=the module, second=the name). You will see a directory called "venv" has been created in this repo
+ * Now to run that virtual environment, type ``` source venv/Scripts/activate```. Note: as long as you don't delete this entire directory/repo from your computer, this virtual envrionment will stay, so when you later exit it, go home, come back, you can start again in this venv. 
+ * The first time running the code, I need to type ``` pip install requirements.txt``` to get the necessary libraries in place
+ * Then I run the code with ``` python main.py```
  * When pushing back to GH (if that is what you want to do), remember to set the gitignore for the "venv" folder
 
 Note: This code is heavily tuned to our use case, being taking a certain set of PEMA outputs, combined with event logsheet metadata 
