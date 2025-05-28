@@ -92,6 +92,12 @@ To run this code on a windows machine I did the following
    to get the necessary libraries in place
 * Now I run the code with 
    $ python main.py
+* Exit 
+* push back to GH when ready. Remember to set a .gitignore to ignore the "venv" directory 
+
+Note that the code works on files that are in the GH repo data_workspace, but its outputs are send to this repo to the data/outputs folder.
+
+
 
 
 
