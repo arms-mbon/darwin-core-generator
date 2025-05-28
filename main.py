@@ -2,6 +2,8 @@ from arms_toolbox.pipeline_its import PipelineITS
 from arms_toolbox.pipeline_18s import Pipeline18S
 from arms_toolbox.pipeline_coi import PipelineCOI
 
+# modify the time_window and aligned_assigment_url according to your running of this code
+
 # ITS
 print("PipelineITSApril2021")
 PipelineITS(
