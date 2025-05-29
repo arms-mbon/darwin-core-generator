@@ -74,7 +74,7 @@ However, we provide slightly fuller instructions for those for whom the above se
 
 To run this code on a windows machine I did the following
 * You need to clone this repository using e.g. Github Desktop. It is important that you have a complete copy of this entire repo and its folders and subfolders, else the code will not run
-  Make sure you have python 3.12 installed. Because of the wonderful way computers work, if you update to that version (download and install it directly from a website) and expect python to have been updated in your working environment, you can forget it.
+* Make sure you have python 3.12 installed. Because of the wonderful way computers work, if you update to that version (download and install it directly from a website) and expect python to have been updated in your working environment, you can forget it.
    Operating systems are designed by twisted minds, so you should get an expert to do it for you. We had to delete old versions, install the new version - remembering to tell it to update my PATH - and then reboot. 
    Always check by typing $python --version from whatever terminal you will run the code from
 * Then I used GHD to clone this repo and asked to open it (from the GHD) using y default editor, being VS Code. 
