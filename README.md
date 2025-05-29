@@ -80,6 +80,7 @@ To run this code on a windows machine I did the following
 * Then I used GHD to clone this repo and asked to open it (from the GHD) using y default editor, being VS Code. 
 * In VS code I then selected the GitBash terminal, not the default powershell 
 * I want to run this in a virtual environment, so that it is isolated from everything else I do. There I need "venv", which fortunately I had, but if you don't then you can pipe install it from the terminal in VSC or any other terminal
+* now to to the darwin-core-generator folder in the gitbash terminal
 * Now set up the virtual env, calling it "venv" (or you could call it "jane" but then you will forget later what "jane" is). 
    Type $ python -m venv venv 
    in your GitBash termin in VSC; first venv=the module, second=the name
@@ -87,8 +88,8 @@ To run this code on a windows machine I did the following
 * Now to run that virtual environment, type 
    $source venv/Scripts/activate
    Note: as long as you don't delete this entire directory/repo from your computer, this virtual envrionment will stay, so when you later exit it, go home, come back, you can start again in your VCS in this venv. 
-* The first time, I need to 
-   $pip install requirements.txt
+* I needed to 
+   $pip install -r requirements.txt
    to get the necessary libraries in place
 * Now I run the code with 
    $ python main.py
