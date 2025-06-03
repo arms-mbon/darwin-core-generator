@@ -1,5 +1,7 @@
 # darwin-core-generator
 
+This code is tuned for data produced by the PEMA bioinformatics pipeline for 18S, ITS, and COI, where those data are accessed via GitHub and are formulated in a specific way. 
+
 ## Local usage and testing
 
 Note: we only give the linux-style shell commands here. For users on Windows we recommend simply exploiting these exact same commands as they are supported in the "terminal" mode of the popular MS Virtual Code tool.
