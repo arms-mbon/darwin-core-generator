@@ -2,6 +2,8 @@
 
 This code is tuned for data produced by the PEMA bioinformatics pipeline for 18S, ITS, and COI, where those data are accessed via GitHub and are formulated in a specific way. 
 
+The code main.py is the file you will use to run the code (see further instructions below) and that calls on the other python codes in the folder arms_toolbox. Please note that currently we are using the more up-to-date code in the folder arms_toolbox_datarelease001 (this was first created for the ARMS-MBON data release #1, and is also being used for data release #2) instead: the two will be merged at some point in the future.  
+
 ## Local usage and testing
 
 Note: we only give the linux-style shell commands here. For users on Windows we recommend simply exploiting these exact same commands as they are supported in the "terminal" mode of the popular MS Virtual Code tool.
