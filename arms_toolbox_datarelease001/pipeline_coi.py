@@ -9,6 +9,8 @@ To be improved
 - There are now so many IF COI ELSE in here, that it needs to be split into two scripts (as was originally the case)
 - I get reports for 18S that there are run accession numbers with no sample accession numbers found in ENA
   in fact that is not the case, it misses only some of the occurrence IDs
+- We only look for WoRMS AphiaIds for the scientitic name level in the data here - we do not travel along the taxon tree to find a match at a higher and higher level. 
+  To be considered if this should be done - would result in more matches to WoRMS
   """
 
 import sys
@@ -39,11 +41,17 @@ class PipelineCOI(Pipeline):
     
     def run(self):
         # Read in the PEMA files from GH data_workspace repo
-        full_file_name = f"https://raw.githubusercontent.com/arms-mbon/data_workspace/main/analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/Extended_final_table_{self.time_window}_{self.genomic_region}_noBlank_TaxonomyFull.csv"
+        # for data relesase 001
+        #full_file_name = f"https://raw.githubusercontent.com/arms-mbon/data_workspace/main/analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/Extended_final_table_{self.time_window}_{self.genomic_region}_noBlank_TaxonomyFull.csv"
+        # for data release 002 
+        full_file_name = f"https://raw.githubusercontent.com/arms-mbon/analysis_release_002/main/taxonomic_assignments/Extended_final_table_{self.time_window}_{self.genomic_region}_noBlank_TaxonomyFull.csv"
         df_pema = pd.read_csv(full_file_name).rename(columns={"ASV_number:amplicon": "OTU"})            
 
         # Reading in the taxonomic assigments file, from where I want to get the confidence level for the final name 
-        df_pema_tax_url = f"https://raw.githubusercontent.com/arms-mbon/data_workspace/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_{self.time_window}_{self.genomic_region}_noBlank.tsv"
+        # for data release 001
+        #df_pema_tax_url = f"https://raw.githubusercontent.com/arms-mbon/data_workspace/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments/tax_assignments_{self.time_window}_{self.genomic_region}_noBlank.tsv"
+        # for data relase 002
+        df_pema_tax_url = f"https://raw.githubusercontent.com/arms-mbon/analysis_release_002/main/taxonomic_assignments/tax_assignments_{self.time_window}_{self.genomic_region}_noBlank.tsv"
         df_pema_tax = pd.read_csv(df_pema_tax_url, sep=r"\s+", header=None)
         df_pema_tax[0] = df_pema_tax[0].apply(lambda _: _.split("_")[0]) # the first col are IDs, of which we want only the first part, to match to those IDs in the extended table
         df_pema_tax.columns = [
@@ -215,10 +223,10 @@ class PipelineCOI(Pipeline):
         dwca.add_extension(extended_measurement_or_facts_extension, "emof.csv")
         print("writing out to ./data/output/",{self.time_window},"_",{self.genomic_region}) # XXX
         print("")
-        dwca.write(f"./data/output/{self.time_window}_{self.genomic_region}")
+        dwca.write(f"./data/output/{self.time_window}_{self.genomic_region}_dr2")
         self.report_multiples(
-            ncbi_path=f"./data/output/{self.time_window}_{self.genomic_region}/ncbi_multiples.json",
-            aphia_path=f"./data/output/{self.time_window}_{self.genomic_region}/aphia_multiples.json"
+            ncbi_path=f"./data/output/{self.time_window}_{self.genomic_region}_dr2/ncbi_multiples.json",
+            aphia_path=f"./data/output/{self.time_window}_{self.genomic_region}_dr2/aphia_multiples.json"
         )
         #if self.genomic_region == "ITS":  # hack to get rid of technicalReplicateID in ITS DECIDED TO KEEP
         #    df = pd.read_csv(f"./data/output/{self.time_window}_ITS/emof.csv")

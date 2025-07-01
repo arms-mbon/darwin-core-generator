@@ -1,0 +1,50 @@
+{
+    "ARMS_Getxo_G1_20200624_20201103_MF500_s1_r1:Otu74": {
+        "79213": {
+            "AphiaID": 603997,
+            "lsid": "urn:lsid:marinespecies.org:taxname:603997",
+            "scientificname": "Cryptococcus",
+            "rank": "Genus",
+            "isTerrestrial": 1
+        },
+        "5206": {
+            "AphiaID": 603997,
+            "lsid": "urn:lsid:marinespecies.org:taxname:603997",
+            "scientificname": "Cryptococcus",
+            "rank": "Genus",
+            "isTerrestrial": 1
+        }
+    },
+    "ARMS_Getxo_G1_20200624_20201103_SF40_s1_r1:Otu74": {
+        "79213": {
+            "AphiaID": 603997,
+            "lsid": "urn:lsid:marinespecies.org:taxname:603997",
+            "scientificname": "Cryptococcus",
+            "rank": "Genus",
+            "isTerrestrial": 1
+        },
+        "5206": {
+            "AphiaID": 603997,
+            "lsid": "urn:lsid:marinespecies.org:taxname:603997",
+            "scientificname": "Cryptococcus",
+            "rank": "Genus",
+            "isTerrestrial": 1
+        }
+    },
+    "ARMS_Getxo_G2_20200624_20201103_MF100_s1_r1:Otu117": {
+        "5024": {
+            "AphiaID": 988641,
+            "lsid": "urn:lsid:marinespecies.org:taxname:988641",
+            "scientificname": "Venturia",
+            "rank": "Genus",
+            "isTerrestrial": 1
+        },
+        "92443": {
+            "AphiaID": 988641,
+            "lsid": "urn:lsid:marinespecies.org:taxname:988641",
+            "scientificname": "Venturia",
+            "rank": "Genus",
+            "isTerrestrial": 1
+        }
+    }
+}

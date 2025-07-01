@@ -24,38 +24,6 @@
         "measurementValueID": "<NULL>"
     },
     {
-        "measurementType": "sampleAccessionNumber",
-        "measurementUnit": "",
-        "measurementValue": "<NULL>",
-        "measurementTypeID": "",
-        "measurementUnitID": "",
-        "measurementValueID": "<NULL>"
-    },
-    {
-        "measurementType": "NCBIID",
-        "measurementUnit": "",
-        "measurementValue": "<NULL>",
-        "measurementTypeID": "",
-        "measurementUnitID": "",
-        "measurementValueID": "<NULL>"
-    },
-    {
-        "measurementType": "NCBIScientificName",
-        "measurementUnit": "",
-        "measurementValue": "<NULL>",
-        "measurementTypeID": "",
-        "measurementUnitID": "",
-        "measurementValueID": "<NULL>"
-    },
-    {
-        "measurementType": "NCBITaxonRank",
-        "measurementUnit": "",
-        "measurementValue": "<NULL>",
-        "measurementTypeID": "",
-        "measurementUnitID": "",
-        "measurementValueID": "<NULL>"
-    },
-    {
         "measurementType": "fieldReplicateID",
         "measurementUnit": "",
         "measurementValue": "<NULL>",
@@ -68,6 +36,14 @@
         "measurementUnit": "",
         "measurementValue": "<NULL>",
         "measurementTypeID": "http://vocab.nerc.ac.uk/collection/P01/current/IDTCRE01",
+        "measurementUnitID": "",
+        "measurementValueID": "<NULL>"
+    },
+    {
+        "measurementType": "materialSampleID",
+        "measurementUnit": "",
+        "measurementValue": "<NULL>",
+        "measurementTypeID": "https://vocab.nerc.ac.uk/collection/P01/current/SAMPID01/",
         "measurementUnitID": "",
         "measurementValueID": "<NULL>"
     }

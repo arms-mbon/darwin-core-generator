@@ -9,6 +9,8 @@ A check on ENA to find the sample accession numbers for the run accession number
 TODO
 I get reports for 18S that there are run accession numbers with no sample accession numbers found in ENA
 in fact that is not the case, it misses only some of the occurrence IDs
+We only look for WoRMS AphiaIds for the scientitic name level in the data here - we do not travel along the taxon tree to find a match at a higher and higher level. 
+To be considered if this should be done - would result in more matches to WoRMS
 """
 
 import json
@@ -25,36 +27,48 @@ from darwin_core.model import OccurrenceCore, DNAExtension, ExtendedMeasurementO
 from .pipeline import Pipeline
 
 class PipelineITS(Pipeline):
-    def __init__(self, time_window, aligned_assignment_url):
+    def __init__(self, *, time_window, datarelease, aligned_assignment_url):
         self.time_window = time_window
         self.aligned_assignment_url = aligned_assignment_url.replace("directlink.php?fid", "download.php?file")
         self.genomic_region = "ITS"
+        self.datarelease = datarelease 
         self.occurrence_core_schema = "./data/schemas/occurrence_core_schema_its.json"
         self.dna_extension_schema = "./data/schemas/dna_extension_schema_its.json"
         self.cache = {}
         self.ncbi2aphia = {}
+        self.nomatch = {}
         self.ncbi_multiples = {}  # occurrence_ids with multiple ncbi_tax_ids
         self.aphia_multiples = {}  # ncbi_tax_ids with multiple aphia_ids
+
     
     def run(self):
-        # Read in the PEMA files from GH data_workspace repo
+        # Read in the PEMA files from GH analysis_release_00x repo
         if self.genomic_region == "ITS":
-            full_file_name = f"https://raw.githubusercontent.com/arms-mbon/data_workspace/main/analysis_data/from_pema/processing_batch1/taxonomic_assignments/Extended_final_table_{self.time_window}_{self.genomic_region}_noBlank.xlsx"
-            df_pema = pd.read_excel(full_file_name)
+            # to accommodate that sometime this is a CSV and other times an XLSX (in fact, only ITS has .xlsx in data relase 001)
+            try:
+                full_file_name = f"https://raw.githubusercontent.com/arms-mbon/analysis_release_{self.datarelease}/main/taxonomic_assignments/Extended_final_table_{self.time_window}_{self.genomic_region}_noBlank.xlsx"
+                print(f"{full_file_name=}\n{self.time_window=}\n{self.genomic_region}")
+                df_pema = pd.read_excel(full_file_name)
+            except:
+                full_file_name = f"https://raw.githubusercontent.com/arms-mbon/analysis_release_{self.datarelease}/main/taxonomic_assignments/Extended_final_table_{self.time_window}_{self.genomic_region}_noBlank.csv"
+                print(f"{full_file_name=}\n{self.time_window=}\n{self.genomic_region}")
+                df_pema = pd.read_csv(full_file_name)
         elif self.genomic_region == "18S":
-            full_file_name = f"https://raw.githubusercontent.com/arms-mbon/data_workspace/main/analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments/Extended_final_table_{self.time_window}_{self.genomic_region}_noBlank_TaxonomyCurated.csv"
+            try:
+                full_file_name = f"https://raw.githubusercontent.com/arms-mbon/analysis_{self.datarelease}/main/taxonomic_assignments/Extended_final_table_{self.time_window}_{self.genomic_region}_noBlank_TaxonomyCurated.xlsx"
+            except:
+                full_file_name = f"https://raw.githubusercontent.com/arms-mbon/analysis_{self.datarelease}/main/taxonomic_assignments/Extended_final_table_{self.time_window}_{self.genomic_region}_noBlank_TaxonomyCurated.csv"
+            print(f"{full_file_name=}\n{self.time_window=}\n{self.genomic_region}")
             df_pema = pd.read_csv(full_file_name)
         else:
             full_file_name = "None"
-        #print("full file name",full_file_name)    # XXX
         
-        # Read in the observatory, omics, and sample event files from GH
+        # Read in the observatory, omics, and sample event files from GH, from the data_workspace repo
         df_observatory = pd.read_csv("https://raw.githubusercontent.com/arms-mbon/data_workspace/main/qualitycontrolled_data/combined/combined_ObservatoryData.csv")
         df_omics = pd.read_csv("https://raw.githubusercontent.com/arms-mbon/data_workspace/main/qualitycontrolled_data/combined/combined_OmicsData.csv")
         df_sampling = pd.read_csv("https://raw.githubusercontent.com/arms-mbon/data_workspace/main/qualitycontrolled_data/combined/combined_SamplingEventData.csv")
         replicate_material_sample_ids = list(set(df_pema.columns) - {"OTU", "Classification", "TAXON:NCBI_TAX_ID"})
         replicate_material_sample_ids.sort()
-        #print("number of sample ids",len(replicate_material_sample_ids)) # XXX
 
         # Set up to read in fasta files (which are on the MDA so need to be downloaded)
         fasta = self.parse_fasta(self.aligned_assignment_url)
@@ -65,12 +79,13 @@ class PipelineITS(Pipeline):
             "submergedTime": self.get_emof_submerged_time,
             "preservativeUsed": self.get_emof_preservative_used,
             "lowerLimitFilterSize": self.get_emof_lower_limit_filter_size,
-            "sampleAccessionNumber": self.get_emof_sample_accession_number,
-            "NCBIID": self.get_emof_ncbi_id,
-            "NCBIScientificName": self.get_emof_ncbi_scientific_name,
-            "NCBITaxonRank": self.get_emof_ncbi_taxon_rank,
+            #"sampleAccessionNumber": self.get_emof_sample_accession_number,
+            #"NCBIID": self.get_emof_ncbi_id,
+            #"NCBIScientificName": self.get_emof_ncbi_scientific_name,
+            #"NCBITaxonRank": self.get_emof_ncbi_taxon_rank,
             "fieldReplicateID": self.get_emof_field_replicate,
             "technicalReplicateID": self.get_emof_technical_replicate,
+            "materialSampleID": self.get_emof_material_sample_id,
         }
 
         # Set up the other CSV files of the DwCA
@@ -129,7 +144,9 @@ class PipelineITS(Pipeline):
                     occurrence_core.add_row(
                         occurrenceID=occurrence_id,
                         eventID=df_sampling_subset["EventID"].iloc[0],
-                        materialSampleID=df_sampling_subset["ReplicateMaterialSampleID"].iloc[0],
+                        #!!!move to emof 
+                        # materialSampleID = df_sampling_subset["ReplicateMaterialSampleID"].iloc[0],
+                        materialSampleID = emof_functions["sampleAccessionNumber"]() ,
                         eventDate=f"{df_sampling_subset['DateDeployed'].iloc[0]}/{df_sampling_subset['DateCollected'].iloc[0]}",
                         organismQuantity=row[rmsid],
                         sampleSizeValue=df_pema_subset[rmsid].sum(),
@@ -149,7 +166,33 @@ class PipelineITS(Pipeline):
                         scientificName=self.cache[taxon_ncbi_tax_id]["scientificName"],
                         taxonRank=self.cache[taxon_ncbi_tax_id]["taxonRank"],
                         taxonId=row["OTU"],
+                        taxonConcept=f"NCBI:{taxon_ncbi_tax_id}"
                     )
+                    # AAARGH wrong place? NEW 1 Bit to take classification and find the name one down (to the left) of the scientific name - to potentially use later
+                    temp = self.get_core_verbatim_identification(row["Classification"])
+                    taxClassString = temp.split(";")
+                    temp = self.get_core_verbatim_identification(row["TAXON:NCBI_TAX_ID"])
+                    sciName = temp.split(":")[0]
+                    sciName = sciName.replace("_"," ") # replace any _ in sciName (which occurs in species level) with blank so all gene type are the same format
+                    # string will be 
+                    # 18s: Main genome;Eukaryota;Opisthokonta;Metazoa;Bryozoa;NA;NA;NA;NA;NA;NA	
+                    # ITS: Cellular organisms;Eukaryota;Opisthokonta;Fungi;Basidiomycota;Cystobasidiomycetes;Cystobasidiomycetes_ord_Incertae_sedis;Cystobasidiomycetes_fam_Incertae_sedis;Symmetrospora;Symmetrospora_foliicola
+                    # ITS: Cellular organisms;Eukaryota;Opisthokonta;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales;Malasseziaceae;Malassezia;Unknown Malassezia species 1	
+                    # CO1: Eukaryota;Mollusca;Bivalvia;Ostreida;Ostreidae;Ostrea;Ostrea stentina	
+                    # and the NCBI bit is sciNAme:id and may have "_" between spaces (Where is species name)
+                    # Can tell if is species name because sciName will be "xxx_xxx" or "xxx xxx" 
+                    nameB4SciName = "none"
+                    for i in range(0,len(taxClassString)-1):
+                        # as ITS seems to have _ in the taxClassString also, need to remove
+                        sey = taxClassString[i].replace("_"," ")
+                        if sey == sciName:
+                            try:
+                              nameB4SciName = taxClassString[i-1]
+                              break
+                            except:
+                              nameB4SciName = "none" # in case this happens at top-taxon level
+                              break 
+
                     dna_extension.add_row(
                         occurrenceID=occurrence_id,
                         env_broad_scale=df_observatory_subset["ENVO broad scale"].iloc[0],
@@ -187,10 +230,10 @@ class PipelineITS(Pipeline):
         dwca.add_extension(dna_extension, "dnaextension.csv")
         dwca.add_extension(extended_measurement_or_facts_extension, "emof.csv")
         print("writing out to ./data/output/",{self.time_window},"_",{self.genomic_region}) # XXX
-        dwca.write(f"./data/output/{self.time_window}_{self.genomic_region}")
+        dwca.write(f"./data/output/{self.time_window}_{self.genomic_region}_dr2")
         self.report_multiples(
-            ncbi_path=f"./data/output/{self.time_window}_{self.genomic_region}/ncbi_multiples.json",
-            aphia_path=f"./data/output/{self.time_window}_{self.genomic_region}/aphia_multiples.json"
+            ncbi_path=f"./data/output/{self.time_window}_{self.genomic_region}_dr2/ncbi_multiples.json",
+            aphia_path=f"./data/output/{self.time_window}_{self.genomic_region}_dr2/aphia_multiples.json"
         )
         #if self.genomic_region == "ITS":  # hack to get rid of technicalReplicateID in ITS DECIDED TO KEEP
         #    df = pd.read_csv(f"./data/output/{self.time_window}_ITS/emof.csv")
@@ -224,7 +267,7 @@ class PipelineITS(Pipeline):
         else:
             return None
 
-    # Get the Aphia ID for the NCBI ID
+    # Get the Aphia ID for the NCBI ID 
     def request_aphia(self, ncbi_tax_id):
         if not ncbi_tax_id in self.ncbi2aphia.keys():
             response = requests.get(
@@ -237,6 +280,7 @@ class PipelineITS(Pipeline):
             else:
                 self.ncbi2aphia[ncbi_tax_id] = {}
 
+
     def update_cache(self, occurrence_id, taxon_ncbi_tax_id):
         if not taxon_ncbi_tax_id in self.cache.keys():
             self.cache[taxon_ncbi_tax_id] = {}
@@ -245,9 +289,11 @@ class PipelineITS(Pipeline):
             self.cache[taxon_ncbi_tax_id]["ncbi_tax_ids"] = ncbi_tax_ids
             for ncbi_tax_id in ncbi_tax_ids:
                 response_json = self.request_ena(ncbi_tax_id)
+                self.level = "" # here to capture if level is species
                 if response_json:
                     self.cache[taxon_ncbi_tax_id]["NCBIID"] = ncbi_tax_id
                     self.cache[taxon_ncbi_tax_id]["NCBITaxonRank"] = response_json["rank"]
+                    self.level = response_json["rank"]
                     break
             assert self.cache[taxon_ncbi_tax_id]["NCBIID"]
             ncbi_tax_id = self.cache[taxon_ncbi_tax_id]["NCBIID"]
@@ -313,7 +359,12 @@ class PipelineITS(Pipeline):
             - datetime.strptime(date_deployed, "%Y-%m-%d")
         ).days
         return mv, "" 
-
+    
+    @staticmethod
+    def get_emof_material_sample_id(**kwargs):
+        mv = kwargs["df_sampling_subset"]["ReplicateMaterialSampleID"].iloc[0]
+        return mv,""
+    
     @staticmethod
     def get_emof_preservative_used(**kwargs):
         mv = kwargs["df_sampling_subset"]["Preservative"].iloc[0]
