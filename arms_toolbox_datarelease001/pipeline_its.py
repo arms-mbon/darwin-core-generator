@@ -163,8 +163,8 @@ class PipelineITS(Pipeline):
                         eventRemarks=self.get_core_event_remarks(df_sampling_subset),
                         verbatimIdentification=self.get_core_verbatim_identification(row["Classification"]),
                         scientificNameID=self.cache[taxon_ncbi_tax_id]["scientificNameID"],
-                        scientificName=self.cache[taxon_ncbi_tax_id]["scientificName"],
-                        taxonRank=self.cache[taxon_ncbi_tax_id]["taxonRank"],
+                        scientificName=self.get_core_scientific_name(taxon_ncbi_tax_id),
+                        taxonRank=self.get_core_taxon_rank(taxon_ncbi_tax_id),
                         taxonId=row["OTU"],
                         taxonConcept=f"NCBI:{taxon_ncbi_tax_id}"
                     )
@@ -412,13 +412,11 @@ class PipelineITS(Pipeline):
         mv = self.cache[kwargs["taxon_ncbi_tax_id"]]["NCBIID"]
         return mv, "" 
 
-    def get_emof_ncbi_scientific_name(self, **kwargs):
-        mv = self.cache[kwargs["taxon_ncbi_tax_id"]]["NCBIScientificName"]
-        return mv, "" 
+    def get_core_scientific_name(self, taxon_ncbi_tax_id):
+        return (self.cache[taxon_ncbi_tax_id]["scientificName"] or self.cache[taxon_ncbi_tax_id]["NCBIScientificName"])
 
-    def get_emof_ncbi_taxon_rank(self, **kwargs):
-        mv = self.cache[kwargs["taxon_ncbi_tax_id"]]["NCBITaxonRank"]
-        return mv, "" 
+    def get_core_taxon_rank(self, taxon_ncbi_tax_id):
+        return (self.cache[taxon_ncbi_tax_id]["taxonRank"] or self.cache[taxon_ncbi_tax_id]["NCBITaxonRank"])
 
     @staticmethod
     def get_emof_field_replicate(**kwargs):
