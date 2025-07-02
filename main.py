@@ -1,6 +1,6 @@
-from arms_toolbox_datarelease001.pipeline_its import PipelineITS
-from arms_toolbox_datarelease001.pipeline_18s import Pipeline18S
-from arms_toolbox_datarelease001.pipeline_coi import PipelineCOI
+from arms_toolbox_dr002.pipeline_its import PipelineITS
+from arms_toolbox_dr002.pipeline_18s import Pipeline18S
+from arms_toolbox_dr002.pipeline_coi import PipelineCOI
 
 # modify the time_window and aligned_assigment_url according to your running of this code
 # the COI use the all_sequences_grouped fasta files, 18S and ITS use the aligned_assignments ones
