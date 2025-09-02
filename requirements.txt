@@ -5,3 +5,4 @@ pycountry
 ncbi-taxonomist
 requests
 openpyxl
+tqdm
