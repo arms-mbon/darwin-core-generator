@@ -14,7 +14,7 @@
     "samplingProtocol": "https://github.com/arms-mbon/documentation/tree/main/armsmbon_handbook",
     "associatedSequences": "<NULL>",
     "identificationReferences": "PEMA v2.1.4 https://github.com/hariszaf/pema | https://github.com/arms-mbon/analysis_release_002/tree/main/parameter_files",
-    "identificationRemarks": "CREST classifier; Minimum bit-score 155; LCA bitscore range 2%",
+    "identificationRemarks": "CREST classifier; Minimum bit-score 155; LCA bitscore range 2% | PR2 v4.13 | VSEARCH v2.9.1; clustering similarity 97%",
     "locationID": "<NULL>",
     "decimalLatitude": "<NULL>",
     "decimalLongitude": "<NULL>",
