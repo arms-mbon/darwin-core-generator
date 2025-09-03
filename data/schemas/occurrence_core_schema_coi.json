@@ -14,7 +14,7 @@
     "samplingProtocol": "https://github.com/arms-mbon/documentation/tree/main/armsmbon_handbook",
     "associatedSequences": "<NULL>",
     "identificationReferences": "PEMA v2.1.4 https://github.com/hariszaf/pema | https://github.com/arms-mbon/analysis_release_002/tree/main/parameter_files",
-    "identificationRemarks": "RDP classifier; confidence cutoff 0.8; ref db Midori v2",
+    "identificationRemarks": "RDP classifier; confidence cutoff 0.8; ref db Midori v2 | Midori v2 | swarm2; d = 10",
     "locationID": "<NULL>",
     "decimalLatitude": "<NULL>",
     "decimalLongitude": "<NULL>",

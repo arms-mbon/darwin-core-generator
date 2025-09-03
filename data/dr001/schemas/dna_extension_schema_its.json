@@ -1,0 +1,19 @@
+{
+    "occurrenceID": "<NULL>",
+    "env_broad_scale": "<NULL>",
+    "env_local_scale": "<NULL>",
+    "env_medium_scale": "<NULL>",	
+    "DNA_Sequence": "<NULL>", 
+    "SOP": "https://github.com/arms-mbon/documentation/tree/main/standard_operating_procedures/ARMS_MolecularSOPs_v1.0.pdf  | https://hariszaf.github.io/pema_documentation/ | https://github.com/arms-mbon/analysis_release_001/tree/main/parameter_files",
+    "target_gene": "ITS",
+    "pcr_primer_forward": "CTTGGTCATTTAGAGGAAGTAA",
+    "pcr_primer_name_forward": "ITS1f",
+    "pcr_primer_reverse": "GCTGCGTTCTTCATCGATGC",
+    "pcr_primer_name_reverse": "ITS2",
+    "pcr_primer_reference": "FWD: Gardes & Bruns 1993 https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-294X.1993.tb00005.x; REV: White et al. 1990 http://dx.doi.org/10.1016/B978-0-12-372180-8.50042-1",
+    "lib_layout": "paired",
+    "seq_meth": "MiSeq",
+    "tax_class": "CREST classifier; Minimum bit-score 155; LCA bitscore range 2%; ref db Unite db v7.2 | PEMA v2.1.4 https://github.com/hariszaf/pema;  https://github.com/arms-mbon/analysis_release_001/tree/main/parameter_files | Unite db v7.2 | swarm2; d = 10",
+    "otu_db": "Unite db v7.2",
+    "otu_class_appr": "swarm2; d = 10"
+}

@@ -1,0 +1,19 @@
+{
+    "occurrenceID": "<NULL>",
+    "env_broad_scale": "<NULL>",
+    "env_local_scale": "<NULL>",
+    "env_medium_scale": "<NULL>",	
+    "DNA_Sequence": "<NULL>", 
+    "SOP": "https://github.com/arms-mbon/documentation/tree/main/standard_operating_procedures/ARMS_MolecularSOPs_v1.0.pdf | https://hariszaf.github.io/pema_documentation/ | https://github.com/arms-mbon/analysis_release_001/tree/main/parameter_files",
+    "target_gene": "COI",
+    "pcr_primer_forward": "GGWACWGGWTGAACWGTWTAYCCYCC",
+    "pcr_primer_name_forward": "mlCOIintF",
+    "pcr_primer_reverse": "TAIACYTCIGGRTGICCRAARAAYCA",
+    "pcr_primer_name_reverse": "jgHCO2198",
+    "pcr_primer_reference": "Hardy et al. 2010 https://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.2009.04411.x",
+    "lib_layout": "paired",
+    "seq_meth": "MiSeq",
+    "tax_class": "RDP classifier; confidence cutoff 0.8; ref db Midori v2|PEMA v2.1.4 https://github.com/hariszaf/pema ; https://github.com/arms-mbon/analysis_release_001/tree/main/parameter_files |Midori v2|swarm2; d = 10",
+    "otu_db": "Midori v2",
+    "otu_class_appr": "swarm2; d = 10"
+}

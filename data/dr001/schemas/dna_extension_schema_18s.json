@@ -1,0 +1,19 @@
+{
+    "occurrenceID": "<NULL>",
+    "env_broad_scale": "<NULL>",
+    "env_local_scale": "<NULL>",
+    "env_medium_scale": "<NULL>",	
+    "DNA_Sequence": "<NULL>", 
+    "SOP": "https://github.com/arms-mbon/documentation/tree/main/standard_operating_procedures/ARMS_MolecularSOPs_v1.0.pdf | https://hariszaf.github.io/pema_documentation/ | https://github.com/arms-mbon/analysis_release_001/tree/main/parameter_files",
+    "target_gene": "18S",
+    "pcr_primer_forward": "GGWACWGGWTGAACWGTWTAYCCYCC",
+    "pcr_primer_name_forward": "mlCOIintF",
+    "pcr_primer_reverse": "TAIACYTCIGGRTGICCRAARAAYCA",
+    "pcr_primer_name_reverse": "jgHCO2198",
+    "pcr_primer_reference": "FWD: Leray et al. 2013 https://doi.org/10.1186/1742-9994-10-34; REV: Geller et al. 2013 https://doi.org/10.1111/1755-0998.12138",
+    "lib_layout": "paired",
+    "seq_meth": "MiSeq",
+    "tax_class": "CREST classifier; Minimum bit-score 155; LCA bitscore range 2%; ref db PR2 v4.13 | PEMA v2.1.4 https://github.com/hariszaf/pema; https://github.com/arms-mbon/analysis_release_001/tree/main/parameter_files | PR2 v4.13 | VSEARCH v2.9.1; clustering similarity 97%",
+    "otu_db": "PR2 v4.13",
+    "otu_class_appr": "VSEARCH v2.9.1; clustering similarity 97%"
+}
