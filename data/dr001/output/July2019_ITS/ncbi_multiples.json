@@ -1,0 +1,62 @@
+{
+    "ARMS_Crete_1HERP_20180928_20190128_SED_r1:Otu366": {
+        "45272": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "76204": {
+            "AphiaID": 1338656,
+            "lsid": "urn:lsid:marinespecies.org:taxname:1338656",
+            "scientificname": "Graphium",
+            "rank": "Genus",
+            "isTerrestrial": 1
+        },
+        "1503932": {
+            "AphiaID": 1338656,
+            "lsid": "urn:lsid:marinespecies.org:taxname:1338656",
+            "scientificname": "Graphium",
+            "rank": "Genus",
+            "isTerrestrial": 1
+        },
+        "1503934": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_SED_r1:Otu3836": {
+        "45272": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "76204": {
+            "AphiaID": 1338656,
+            "lsid": "urn:lsid:marinespecies.org:taxname:1338656",
+            "scientificname": "Graphium",
+            "rank": "Genus",
+            "isTerrestrial": 1
+        },
+        "1503932": {
+            "AphiaID": 1338656,
+            "lsid": "urn:lsid:marinespecies.org:taxname:1338656",
+            "scientificname": "Graphium",
+            "rank": "Genus",
+            "isTerrestrial": 1
+        },
+        "1503934": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    }
+}

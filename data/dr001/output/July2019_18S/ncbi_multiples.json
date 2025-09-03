@@ -1,0 +1,1564 @@
+{
+    "ARMS_BelgiumCoast_AZFPin_20180712_20180818_MF500_ETOH_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_MF500_DMSO_r1:Otu14": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_MF500_DMSO_r1:Otu871": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_MF500_DMSO_r1:Otu1249": {
+        "2875": {
+            "AphiaID": 144086,
+            "lsid": "urn:lsid:marinespecies.org:taxname:144086",
+            "scientificname": "Dictyota",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "323396": {
+            "AphiaID": 144086,
+            "lsid": "urn:lsid:marinespecies.org:taxname:144086",
+            "scientificname": "Dictyota",
+            "rank": "Genus",
+            "isTerrestrial": null
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_MF500_DMSO_r1:Otu341": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_MF500_DMSO_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_MF500_DMSO_r1:Otu1173": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_MF500_DMSO_r1:Otu1776": {
+        "34532": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "216821": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_MF500_ETOH_r1:Otu14": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_MF500_ETOH_r1:Otu341": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_MF500_ETOH_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_PS250_ETOH_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_SED_r1:Otu14": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_SED_r1:Otu828": {
+        "2558240": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "27320": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_SED_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_SF_DMSO_r1:Otu14": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_SF_DMSO_r1:Otu341": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_SF_DMSO_r1:Otu4": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_SF_DMSO_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_SF_ETOH_r1:Otu4": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Crete_1HERP_20180928_20190128_SF_ETOH_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_GulfOfPiran_Fornace_20180815_20181118_MF500_DMSO_r1:Otu14": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_GulfOfPiran_Fornace_20180815_20181118_MF500_DMSO_r1:Otu1833": {
+        "65574": {
+            "AphiaID": 586732,
+            "lsid": "urn:lsid:marinespecies.org:taxname:586732",
+            "scientificname": "Acantharia",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "238777": {
+            "AphiaID": 345868,
+            "lsid": "urn:lsid:marinespecies.org:taxname:345868",
+            "scientificname": "Phaeodaria",
+            "rank": "Subclass",
+            "isTerrestrial": null
+        },
+        "65582": {
+            "AphiaID": 235740,
+            "lsid": "urn:lsid:marinespecies.org:taxname:235740",
+            "scientificname": "Polycystina",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_GulfOfPiran_Fornace_20180815_20181118_MF500_DMSO_r1:Otu3174": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_GulfOfPiran_Fornace_20180815_20181118_MF500_ETOH_r1:Otu14": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_GulfOfPiran_Fornace_20180815_20181118_MF500_ETOH_r1:Otu1833": {
+        "65574": {
+            "AphiaID": 586732,
+            "lsid": "urn:lsid:marinespecies.org:taxname:586732",
+            "scientificname": "Acantharia",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "238777": {
+            "AphiaID": 345868,
+            "lsid": "urn:lsid:marinespecies.org:taxname:345868",
+            "scientificname": "Phaeodaria",
+            "rank": "Subclass",
+            "isTerrestrial": null
+        },
+        "65582": {
+            "AphiaID": 235740,
+            "lsid": "urn:lsid:marinespecies.org:taxname:235740",
+            "scientificname": "Polycystina",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_GulfOfPiran_Fornace_20180815_20181118_MF500_ETOH_r1:Otu2007": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_GulfOfPiran_Fornace_20180815_20181118_MF500_ETOH_r1:Otu2483": {
+        "257503": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "2547639": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_GulfOfPiran_Fornace_20180815_20181118_MF500_ETOH_r1:Otu3174": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_GulfOfPiran_Fornace_20180815_20181118_MF500_ETOH_r1:Otu1386": {
+        "257503": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "2547639": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_GulfOfPiran_Fornace_20180815_20181118_MF500_ETOH_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_GulfOfPiran_Fornace_20180815_20181118_MF500_ETOH_r1:Otu2447": {
+        "10197": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "1003038": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "516519": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_GulfOfPiran_Fornace_20180815_20181118_MF500_ETOH_r1:Otu1173": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_MF100_ETOH_r1:Otu14": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_MF100_ETOH_r1:Otu1833": {
+        "65574": {
+            "AphiaID": 586732,
+            "lsid": "urn:lsid:marinespecies.org:taxname:586732",
+            "scientificname": "Acantharia",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "238777": {
+            "AphiaID": 345868,
+            "lsid": "urn:lsid:marinespecies.org:taxname:345868",
+            "scientificname": "Phaeodaria",
+            "rank": "Subclass",
+            "isTerrestrial": null
+        },
+        "65582": {
+            "AphiaID": 235740,
+            "lsid": "urn:lsid:marinespecies.org:taxname:235740",
+            "scientificname": "Polycystina",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_MF100_ETOH_r1:Otu2007": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_MF100_ETOH_r1:Otu2483": {
+        "257503": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "2547639": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_MF100_ETOH_r1:Otu3174": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_MF100_ETOH_r1:Otu1386": {
+        "257503": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "2547639": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_MF100_ETOH_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_MF100_ETOH_r1:Otu2447": {
+        "10197": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "1003038": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "516519": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_MF100_ETOH_r1:Otu1173": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_MF500_ETOH_r1:Otu4": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_MF500_ETOH_r1:Otu2953": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_MF500_ETOH_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_PS90_ETOH_r1:Otu14": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_PS90_ETOH_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SED100_DMSO_r1:Otu752": {
+        "257503": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "2547639": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SED100_DMSO_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SED100_DMSO_r1:Otu1776": {
+        "34532": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "216821": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SED100_DMSO_r1:Otu1748": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SED500_DMSO_r1:Otu752": {
+        "257503": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "2547639": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SED500_DMSO_r1:Otu981": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SED500_DMSO_r1:Otu4": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SED500_DMSO_r1:Otu2569": {
+        "65574": {
+            "AphiaID": 586732,
+            "lsid": "urn:lsid:marinespecies.org:taxname:586732",
+            "scientificname": "Acantharia",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "238777": {
+            "AphiaID": 345868,
+            "lsid": "urn:lsid:marinespecies.org:taxname:345868",
+            "scientificname": "Phaeodaria",
+            "rank": "Subclass",
+            "isTerrestrial": null
+        },
+        "65582": {
+            "AphiaID": 235740,
+            "lsid": "urn:lsid:marinespecies.org:taxname:235740",
+            "scientificname": "Polycystina",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SED500_DMSO_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SED500_DMSO_r1:Otu1776": {
+        "34532": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "216821": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SF40_DMSO_r1:Otu892": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SF40_DMSO_r1:Otu2940": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SF40_DMSO_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SF40_ETOH_r1:Otu14": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SF40_ETOH_r1:Otu892": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SF40_ETOH_r1:Otu4": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SF40_ETOH_r1:Otu2584": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SF40_ETOH_r1:Otu2956": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SF40_ETOH_r1:Otu2953": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Koster_VH2_20180418_20180906_SF40_ETOH_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Plymouth_MBA2_20180701_20181001_MF100_DMSO_r1:Otu14": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Plymouth_MBA2_20180701_20181001_MF100_DMSO_r1:Otu752": {
+        "257503": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "2547639": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Plymouth_MBA2_20180701_20181001_MF100_DMSO_r1:Otu828": {
+        "2558240": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "27320": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Plymouth_MBA2_20180701_20181001_MF100_DMSO_r1:Otu4": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Plymouth_MBA2_20180701_20181001_MF100_DMSO_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Plymouth_MBA2_20180701_20181001_MF100_ETOH_r1:Otu14": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Plymouth_MBA2_20180701_20181001_MF100_ETOH_r1:Otu4": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Plymouth_MBA2_20180701_20181001_MF100_ETOH_r1:Otu841": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Plymouth_MBA2_20180701_20181001_MF100_ETOH_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Plymouth_MBA2_20180701_20181001_MF500_ETOH_r1:Otu14": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Plymouth_MBA2_20180701_20181001_MF500_ETOH_r1:Otu752": {
+        "257503": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "2547639": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Plymouth_MBA2_20180701_20181001_MF500_ETOH_r1:Otu4": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Plymouth_MBA2_20180701_20181001_MF500_ETOH_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Roscoff_BasBloS1_20180711_20181025_SF40_DMSO_A_r1:Otu14": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Roscoff_BasBloS1_20180711_20181025_SF40_DMSO_A_r1:Otu1249": {
+        "2875": {
+            "AphiaID": 144086,
+            "lsid": "urn:lsid:marinespecies.org:taxname:144086",
+            "scientificname": "Dictyota",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "323396": {
+            "AphiaID": 144086,
+            "lsid": "urn:lsid:marinespecies.org:taxname:144086",
+            "scientificname": "Dictyota",
+            "rank": "Genus",
+            "isTerrestrial": null
+        }
+    },
+    "ARMS_Roscoff_BasBloS1_20180711_20181025_SF40_DMSO_A_r1:Otu4": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Roscoff_BasBloS1_20180711_20181025_SF40_DMSO_A_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Roscoff_BasBloS1_20180711_20181025_SF40_ETOH_A_r1:Otu14": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Roscoff_BasBloS1_20180711_20181025_SF40_ETOH_A_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_TZS_Angbat_20180711_20181106_MF500_ETOH_r1:Otu14": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_TZS_Angbat_20180711_20181106_MF500_ETOH_r1:Otu768": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_TZS_Angbat_20180711_20181106_MF500_ETOH_r1:Otu828": {
+        "2558240": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "27320": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_TZS_Angbat_20180711_20181106_MF500_ETOH_r1:Otu871": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_TZS_Angbat_20180711_20181106_MF500_ETOH_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_TZS_Spikarna_20180711_20181107_MF500_ETOH_r1:Otu14": {
+        "166041": {
+            "AphiaID": 122381,
+            "lsid": "urn:lsid:marinespecies.org:taxname:122381",
+            "scientificname": "Procephalothrix",
+            "rank": "Genus",
+            "isTerrestrial": null
+        },
+        "1844514": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_TZS_Spikarna_20180711_20181107_MF500_ETOH_r1:Otu2007": {
+        "2857": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        },
+        "651811": {
+            "AphiaID": "N/A",
+            "lsid": "N/A",
+            "scientificname": "N/A",
+            "rank": "N/A",
+            "isTerrestrial": "N/A"
+        }
+    },
+    "ARMS_Vigo_TorallaA_20180607_20180924_SF40_ETOH_r1:Otu3045": {
+        "89593": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        },
+        "115366": {
+            "AphiaID": 104019,
+            "lsid": "urn:lsid:marinespecies.org:taxname:104019",
+            "scientificname": "Craniata",
+            "rank": "Class",
+            "isTerrestrial": 0
+        }
+    },
+    "ARMS_Vigo_TorallaA_20180607_20180924_SF40_ETOH_r1:Otu139": {
+        "1399810": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        },
+        "111869": {
+            "AphiaID": 103495,
+            "lsid": "urn:lsid:marinespecies.org:taxname:103495",
+            "scientificname": "Corella",
+            "rank": "Genus",
+            "isTerrestrial": 0
+        }
+    }
+}
