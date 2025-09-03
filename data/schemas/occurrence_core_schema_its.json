@@ -30,5 +30,7 @@
     "scientificNameID": "<NULL>",
     "scientificName": "<NULL>",
     "taxonRank": "<NULL>",
-    "taxonId": "<NULL>"
+    "taxonId": "<NULL>",
+    "taxonConcept": "<NULL>",
+    "catalogNumber": "<NULL>"
 }

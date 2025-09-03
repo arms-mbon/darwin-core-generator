@@ -40,14 +40,6 @@
         "measurementValueID": "<NULL>"
     },
     {
-        "measurementType": "materialSampleID",
-        "measurementUnit": "",
-        "measurementValue": "<NULL>",
-        "measurementTypeID": "https://vocab.nerc.ac.uk/collection/P01/current/SAMPID01/",
-        "measurementUnitID": "",
-        "measurementValueID": "<NULL>"
-    },
-    {
         "measurementType": "originalScientificName",
         "measurementUnit": "",
         "measurementValue": "<NULL>",
