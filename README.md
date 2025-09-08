@@ -1,17 +1,25 @@
 # darwin-core-generator
 
-This code is tuned for data produced by the PEMA bioinformatics pipeline for 18S, ITS, and COI, where those data are accessed via GitHub and are formulated in a specific way. It is also tuned to the DwC requirements of EurOBIS (as opposed to OBIS or GBIF), in particular for DNA-based occurrences.
+## History
+This code is tuned for ARMS-MBON data produced by the PEMA bioinformatics pipeline for 18S, ITS, and COI. The code takes all of its data from various repositories in this GitHub space to gather the samping event data, taxonomic classifications, ASVs, and processing provenance metadata needed to fill the occurrence and DNA DwC files and the EMOF file.
 
-The code main.py is the file you will use to run the code (see further instructions below) and that calls on the other python codes in the folder arms_toolbox. Please note that currently we are using the more up-to-date code in the folder arms_toolbox_datarelease001 (this was first created for the ARMS-MBON data release #1, and is also being used for data release #2) instead: the two will be merged at some point in the future.  
+The [first version of the code](https://github.com/arms-mbon/darwin-core-generator/tree/main/arms_toolbox_dr001) was run on the first ARMS-MBON data release/data publication: the data associated with the repositories [https://github.com/arms-mbon/data_release_001](https://github.com/arms-mbon/data_release_001), [https://github.com/arms-mbon/analysis_release_001](https://github.com/arms-mbon/analysis_release_001), and [https://github.com/arms-mbon/code_release_001](https://github.com/arms-mbon/code_release_001). 
+The [second version of the code](https://github.com/arms-mbon/darwin-core-generator/tree/main/arms_toolbox_dr002) was created to submit the data of the second ARMS-MBON data release/data publication: the data associated with the repositories [https://github.com/arms-mbon/data_release_002](https://github.com/arms-mbon/data_release_002), [https://github.com/arms-mbon/analysis_release_002](https://github.com/arms-mbon/analysis_release_002), and [https://github.com/arms-mbon/code_release_002](https://github.com/arms-mbon/code_release_002). This code takes some inputs from the [data](https://github.com/arms-mbon/darwin-core-generator/tree/main/data) folder. 
+
+For the first data release, the respective DwC CSV files were organised following the recommendations in [this GBIF paper](https://docs.gbif.org/publishing-dna-derived-data/en/) and those data were submitted to OBIS. For the second data release, for which these intention is to submit to EurOBIS, we followed their slightly different recommendations. One change is that the scientificName and scientificNameId in the occurrence.CSV file should be either one that can be found in [WoRMS](https://www.marinespecies.org/) or which is listed as an "official" name in the Catalogue of Life (using its [APIs](https://api.catalogueoflife.org/)). Where these fields are blank, the taxonomic classification produced by the reference library used in PEMA, and the associated NCBI ID (where present), are still given. 
 
 ## Local usage and testing
 
+To run the code, use main.py (see further instructions below) and that calls on the other python codes in the folder arms_toolbox. In here you specify the location of the fasta files produced by PEMA (being stored in the Marine Data Archive for our data) and hard code a few other details. More hard-coding of inputs and values can be found in the "schemas" files in "data" (e.g. [here](https://github.com/arms-mbon/darwin-core-generator/tree/main/data/dr001/schemas) for data release 001 and [here](https://github.com/arms-mbon/darwin-core-generator/tree/main/data/schemas) for data release 002).   
+
+
+### On Linux
 Note: we only give the linux-style shell commands here. For users on Windows we recommend simply exploiting these exact same commands as they are supported in the "terminal" mode of the popular MS Virtual Code tool.
 
 Still YMMV and practical execution on your platform might uncover untested / unwanted effects. So pls let us know if important changes and clarifications should be made.
 
 
-### check dependencies
+#### check dependencies
 
 This tool requires python 3.12
 
@@ -25,7 +33,7 @@ $ python3.12 --version
 
 Tip: Check https://cloudbytes.dev/snippets/upgrade-python-to-latest-version-on-ubuntu-linux for how to (safely) get newer versions of python on ubuntu.  Mind that the ubuntu release you run comes with and laregly requires / expects a very specific version of python. While you can add newer versions alongside, one should keep the default / core version around, and only use other ones in virtual environment contexts.
 
-### create a virtual env
+#### create a virtual env
 
 While optional, we strongly recommend running python projects in virtual environments. This allows to avoid version conflicts between dependencies of possibly unrelated python projects. 
 
@@ -58,19 +66,19 @@ Below further shell commands stated on a line starting with `(venv) $` are expec
 Python 3.12.4                  # should be <4.0,>=3.12
 ```
 
-### install dependencies
+#### install dependencies
 
 ```sh
 (venv) $ pip install -r requirements.txt
 ```
 
-### run the main
+#### run the main
 
 ```sh
 (venv) $ python main.py
 ```
 
-## Windows
+### Windows
 
 For users on Windows we recommend simply exploiting these exact same commands as above and as they are supported in the "terminal" mode of the popular MS Virtual Code tool.
 
