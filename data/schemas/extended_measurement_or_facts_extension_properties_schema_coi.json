@@ -38,29 +38,5 @@
         "measurementTypeID": "http://vocab.nerc.ac.uk/collection/P01/current/IDTCRE01",
         "measurementUnitID": "",
         "measurementValueID": "<NULL>"
-    },
-    {
-        "measurementType": "originalScientificName",
-        "measurementUnit": "",
-        "measurementValue": "<NULL>",
-        "measurementTypeID": "",
-        "measurementUnitID": "",
-        "measurementValueID": "<NULL>"
-    },
-    {
-        "measurementType": "originalTaxonRank",
-        "measurementUnit": "",
-        "measurementValue": "<NULL>",
-        "measurementTypeID": "",
-        "measurementUnitID": "",
-        "measurementValueID": "<NULL>"
-    },
-    {
-        "measurementType": "originalScientificNameConfidenceLevel",
-        "measurementUnit": "",
-        "measurementValue": "<NULL>",
-        "measurementTypeID": "",
-        "measurementUnitID": "",
-        "measurementValueID": "<NULL>"
     }
 ]
