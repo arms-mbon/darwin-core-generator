@@ -1,5 +1,5 @@
 from .pipeline import Pipeline
-from .remote_data_file import PTAXDataFrame
+from .data_source import PTAXDataFrame
 import arms_toolbox.function as fn
 import json
 
