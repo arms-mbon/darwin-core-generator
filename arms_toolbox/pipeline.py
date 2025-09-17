@@ -51,8 +51,8 @@ class Pipeline:
             try:
                 self._extract()
             except Exception as e:
-                logger.error(f"ExtractionError;{self.rmsi} failed with exception {e}")
-                traceback.print_exc() # TODO log instead of print
+                logger.error(f"ExtractionError; {self.rmsi} failed with exception {e}")
+                # traceback.print_exc() # TODO log instead of print
                 continue
             for _, pema in self.pema_df_gt.iterrows():
                 self.pema = pema
@@ -66,8 +66,8 @@ class Pipeline:
                     self._transform_and_load_dna_extension()
                     self._transform_and_load_extended_measurement_or_facts_extension()
                 except Exception as e:
-                    logger.error(f"TransformError;{self.occurrence_id} failed with exception {e}")
-                    traceback.print_exc() # TODO log instead of print
+                    logger.error(f"TransformError; {self.occurrence_id} failed with exception {e}")
+                    # traceback.print_exc() # TODO log instead of print
     
     def _extract(self):
         # sampling
