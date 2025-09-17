@@ -1,4 +1,3 @@
-git+https://github.com/vliz-be-opsci/py-darwin-core.git@0.1.0
 pandas
 biopython
 pycountry
@@ -6,3 +5,4 @@ ncbi-taxonomist
 requests
 openpyxl
 tqdm
+pyyaml

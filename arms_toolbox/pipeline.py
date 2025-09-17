@@ -6,7 +6,7 @@ import arms_toolbox.function as fn
 from tqdm import tqdm
 from .data_source import ObservatoryDataFrame, OmicsDataFrame, SamplingDataFrame, MDAFasta, PEMADataFrame
 from .data_sink import OccurrenceCore, DNAExtension, ExtendedMeasurementOrFactsExtension
-from .parameter import EMOFProperties  # TODO refactor this
+from .parameter import EMOFProperties
 import logging
 
 logger = logging.getLogger(__name__)
@@ -18,7 +18,14 @@ class Pipeline:
         self.time_window = time_window
         self.aligned_assignment_url = aligned_assignment_url
         self.data_release = data_release
-        self.emof_properties = EMOFProperties
+        self.emof_properties = EMOFProperties  # TODO refactor this
+        self.emof_functions = {  # TODO refactor this
+            "submergedTime": fn.submerged_time,
+            "preservativeUsed": fn.preservative_used,
+            "lowerLimitFilterSize": fn.lower_limit_filter_size,
+            "fieldReplicateID": fn.field_replicate,
+            "technicalReplicateID": fn.technical_replicate,
+        }
 
         # input
         self.observatory_df = ObservatoryDataFrame().fetch()
@@ -44,8 +51,8 @@ class Pipeline:
             try:
                 self._extract()
             except Exception as e:
-                print(f"ExtractionError;{self.rmsi} failed with exception {e}")
-                traceback.print_exc()
+                logger.error(f"ExtractionError;{self.rmsi} failed with exception {e}")
+                traceback.print_exc() # TODO log instead of print
                 continue
             for _, pema in self.pema_df_gt.iterrows():
                 self.pema = pema
@@ -59,8 +66,8 @@ class Pipeline:
                     self._transform_and_load_dna_extension()
                     self._transform_and_load_extended_measurement_or_facts_extension()
                 except Exception as e:
-                    print(f"TransformError;{self.occurrence_id} failed with exception {e}")
-                    traceback.print_exc()
+                    logger.error(f"TransformError;{self.occurrence_id} failed with exception {e}")
+                    traceback.print_exc() # TODO log instead of print
     
     def _extract(self):
         # sampling
@@ -89,7 +96,7 @@ class Pipeline:
             raise AssertionError(f"combination of {oid} & {uid} is duplicated in observatory data")
         self.observatory = self.observatory.iloc[0]
 
-        # pema_gt (the others are a pd.Series, but this will still be a pd.DataFrame)
+        # pema_df_gt (the others are a pd.Series, but this will still be a pd.DataFrame)
         self.pema_df_gt = self.pema_df[self.pema_df[self.rmsi] > 1]
 
 
@@ -132,13 +139,7 @@ class Pipeline:
     
     def _transform_and_load_extended_measurement_or_facts_extension(self): # TODO refactor this function
         for p in self.emof_properties:
-            f = {
-                "submergedTime": fn.submerged_time,
-                "preservativeUsed": fn.preservative_used,
-                "lowerLimitFilterSize": fn.lower_limit_filter_size,
-                "fieldReplicateID": fn.field_replicate,
-                "technicalReplicateID": fn.technical_replicate,
-            }.get(p["measurementType"])
+            f = self.emof_functions.get(p["measurementType"])
             if f:
                 mv, mvid = f(
                     observatory=self.observatory,
