@@ -12,7 +12,7 @@ class RemoteDataFile:
         return NotImplementedError
 
 
-class RemoteExcelFile(RemoteDataFile):
+class RemoteExcelFile(RemoteDataFile): # TODO excel support only applies to data release 001 and can be removed
     def fetch(self, csv_fallback=False):
         if csv_fallback:
             try:
@@ -74,26 +74,29 @@ class PEMADataFrame(RemoteExcelFile):
 class PTAXDataFrame(RemoteTSVFile):
     """PEMA Taxonomy
     """
-    def __init__(self, time_window, data_release):
+    def __init__(self, genomic_region, time_window, data_release):
+        self.genomic_region = genomic_region
         self.time_window = time_window
         self.data_release = data_release
         self.download_url = f"https://raw.githubusercontent.com/arms-mbon/analysis_release_{self.data_release}/main/taxonomic_assignments/tax_assignments_{self.time_window}_COI_noBlank.tsv"
 
     def fetch(self):
-        df = pd.read_csv(self.download_url, sep=r"\s+", header=None)
-        df[0] = df[0].apply(lambda _: _.split("_")[0])
-        df.columns = [
-            "amplicon",
-            "kingdom", "kingdom_confidence",
-            "phylum", "phylum_confidence",
-            "class", "class_confidence",
-            "order", "order_confidence",
-            "g",
-            "family", "family_confidence",
-            "genus", "genus_confidence",
-            "species", "species_confidence",
-        ]
-        return df
+        if self.genomic_region == "COI":
+            df = pd.read_csv(self.download_url, sep=r"\s+", header=None)
+            df[0] = df[0].apply(lambda _: _.split("_")[0])
+            df.columns = [
+                "amplicon",
+                "kingdom", "kingdom_confidence",
+                "phylum", "phylum_confidence",
+                "class", "class_confidence",
+                "order", "g", "order_confidence",
+                "family", "family_confidence",
+                "genus", "genus_confidence",
+                "species", "species_confidence",
+            ]
+            return df
+        else:
+            return None
 
 
 class MDAFasta(RemoteDataFile):

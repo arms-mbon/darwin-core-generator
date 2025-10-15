@@ -40,17 +40,20 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
 DATA_RELEASE = "002"
+DATASET_NAME = f"data_release_{DATA_RELEASE}"
 
 # ITS
 PipelineITS(
     time_window="April2021",
     aligned_assignment_url="https://mda.vliz.be/directlink.php?fid=VLIZ_00001620_6836e1efe1baf206164086",
+    dataset_name=DATASET_NAME,
     data_release=DATA_RELEASE,
 ).run()
 
 PipelineITS(
     time_window="September2020",
     aligned_assignment_url="https://mda.vliz.be/directlink.php?fid=VLIZ_00001620_6836e1efe1b74403284481",
+    dataset_name=DATASET_NAME,
     data_release=DATA_RELEASE,
 ).run()
 
@@ -58,18 +61,21 @@ PipelineITS(
 Pipeline18S(
     time_window="April2021",
     aligned_assignment_url="https://mda.vliz.be/directlink.php?fid=VLIZ_00001620_6836eb9ad4d41893285473",
+    dataset_name=DATASET_NAME,
     data_release=DATA_RELEASE,
 ).run()
 
 Pipeline18S(
     time_window="August2023",
     aligned_assignment_url="https://mda.vliz.be/directlink.php?fid=VLIZ_00001620_6836e9574fcf4378071514",
+    dataset_name=DATASET_NAME,
     data_release=DATA_RELEASE,
 ).run()
 
 Pipeline18S(
     time_window="September2020",
     aligned_assignment_url="https://mda.vliz.be/directlink.php?fid=VLIZ_00001620_6836eb9ae1bae728553767",
+    dataset_name=DATASET_NAME,
     data_release=DATA_RELEASE,
 ).run()
 
@@ -77,17 +83,20 @@ Pipeline18S(
 PipelineCOI(
     time_window="April2021",
     aligned_assignment_url="https://mda.vliz.be/directlink.php?fid=VLIZ_00001620_6836ddf0523bd985666107",
+    dataset_name=DATASET_NAME,
     data_release=DATA_RELEASE,
 ).run()
 
 PipelineCOI(
     time_window="August2023",
     aligned_assignment_url="https://mda.vliz.be/directlink.php?fid=VLIZ_00001620_6836ddf05038e304477491",
+    dataset_name=DATASET_NAME,
     data_release=DATA_RELEASE,
 ).run()
 
 PipelineCOI(
     time_window="September2020",
     aligned_assignment_url="https://mda.vliz.be/directlink.php?fid=VLIZ_00001620_6836ec58b6c4d489886842",
+    dataset_name=DATASET_NAME,
     data_release=DATA_RELEASE,
 ).run()

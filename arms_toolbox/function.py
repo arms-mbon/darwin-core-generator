@@ -11,7 +11,11 @@ from functools import cache
 
 logger = logging.getLogger(__name__)
 
+MIN_CONFIDENCE = 0.8
+
 def _parse_pema_leaf(pema_leaf):
+    if ":" not in pema_leaf:
+        return pema_leaf, None
     taxon = pema_leaf.split(":")[0]
     ncbi_tax_ids = pema_leaf.split(":")[1].split("\\n")
     ncbi_tax_id = ncbi_tax_ids[0] if ncbi_tax_ids else None
@@ -30,6 +34,28 @@ def _parse_pema_tree(classification, taxon):
         .split(";")
     )
     return lineage
+
+def _get_reliable_taxon(ptax, min_confidence=0):
+    ranks = ["species", "genus", "family", "order", "class", "phylum", "kingdom"]
+    for rank in ranks:
+        name = ptax[rank].replace("_", " ")
+        confidence_level = ptax[f"{rank}_confidence"]
+        if float(confidence_level) >= min_confidence:
+            return {
+                "name": name,
+                "rank": rank,
+                "confidence_level": confidence_level,
+                "ptax_leaf": name,
+                "ptax_tree": ";".join([ptax[rank] for rank in ranks[::-1]]),
+            }
+
+    return {
+        "name": None,
+        "rank": None,
+        "confidence_level": None,
+        "ptax_leaf": None,
+        "ptax_tree": None,
+    }
 
 @cache
 def _walk_phylogeny(pema_leaf=None, taxon=None, ncbi_tax_id=None, pema_tree=None, lineage=None):
@@ -189,40 +215,28 @@ def technical_replicate(**kwargs):
         return "", "" 
 
 def original_scientific_name(**kwargs):
-    pema = kwargs["pema"]
     ptax = kwargs["ptax"]
-    otu_id = pema["OTU"].split(":")[1]
-    try:
-        matchrow = ptax.loc[ptax["amplicon"] == otu_id]
-        species_name = matchrow["species"].values[0]
-        _ = matchrow["species_confidence"].values[0]
-        return species_name, ""
-    except Exception:
-        return "none", ""
+    reliable_taxon = _get_reliable_taxon(ptax)
+    name = None
+    if reliable_taxon["rank"] == "species":
+        name = reliable_taxon["name"]
+    return name or "none", ""
 
 def original_taxon_rank(**kwargs):
-    pema = kwargs["pema"]
     ptax = kwargs["ptax"]
-    otu_id = pema["OTU"].split(":")[1]
-    try:
-        matchrow = ptax.loc[ptax["amplicon"] == otu_id]
-        _ = matchrow["species"].values[0]
-        _ = matchrow["species_confidence"].values[0]
-        return "species", ""
-    except Exception:
-        return "none", ""
+    reliable_taxon = _get_reliable_taxon(ptax)
+    rank = None
+    if reliable_taxon["rank"] == "species":
+        rank = reliable_taxon["rank"]  # i.e. "species"
+    return rank or "none", ""
 
 def original_scientific_name_confidence_level(**kwargs):
-    pema = kwargs["pema"]
     ptax = kwargs["ptax"]
-    otu_id = pema["OTU"].split(":")[1]
-    try:
-        matchrow = ptax.loc[ptax["amplicon"] == otu_id]
-        _ = matchrow["species"].values[0]
-        conflevel = matchrow["species_confidence"].values[0]
-        return conflevel, ""
-    except Exception:
-        return "0", ""
+    reliable_taxon = _get_reliable_taxon(ptax)
+    confidence_level = None
+    if reliable_taxon["rank"] == "species":
+        confidence_level = reliable_taxon["confidence_level"]
+    return confidence_level or "0", ""
 
 def material_sample_id(associated_sequences):
     return _get_ena_sample_accession(associated_sequences)
@@ -253,25 +267,43 @@ def event_remarks(sampling: pd.Series):
 def verbatim_identification(pema_tree):
     return _preprocess_pema_tree(pema_tree)
 
-def scientific_name_id(pema_leaf, pema_tree):
+def scientific_name_id(pema_leaf, pema_tree, ptax):
+    if ptax is not None:
+        reliable_taxon = _get_reliable_taxon(ptax, min_confidence=MIN_CONFIDENCE)
+        pema_leaf = reliable_taxon["ptax_leaf"]
+        pema_tree = reliable_taxon["ptax_tree"]
+
     scientific_name_id, _, _ = _walk_phylogeny(
         pema_leaf=pema_leaf,
         pema_tree=pema_tree,
     )
+
     return scientific_name_id
 
-def scientific_name(pema_leaf, pema_tree):
+def scientific_name(pema_leaf, pema_tree, ptax):
+    if ptax is not None:
+        reliable_taxon = _get_reliable_taxon(ptax, min_confidence=MIN_CONFIDENCE)
+        pema_leaf = reliable_taxon["ptax_leaf"]
+        pema_tree = reliable_taxon["ptax_tree"]
+
     _, scientific_name, _ = _walk_phylogeny(
         pema_leaf=pema_leaf,
         pema_tree=pema_tree,
     )
+
     return scientific_name 
 
-def taxon_rank(pema_leaf, pema_tree):
+def taxon_rank(pema_leaf, pema_tree, ptax):
+    if ptax is not None:
+        reliable_taxon = _get_reliable_taxon(ptax, min_confidence=MIN_CONFIDENCE)
+        pema_leaf = reliable_taxon["ptax_leaf"]
+        pema_tree = reliable_taxon["ptax_tree"]
+
     _, _, taxon_rank = _walk_phylogeny(
         pema_leaf=pema_leaf,
         pema_tree=pema_tree,
     )
+
     return taxon_rank
 
 def dna_sequence(otu, mda_fasta, genomic_region):

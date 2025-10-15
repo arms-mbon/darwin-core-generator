@@ -1,5 +1,4 @@
 from .pipeline import Pipeline
-from .data_source import PTAXDataFrame
 from .parameter import EMOFPropertiesCOI
 import arms_toolbox.function as fn
 
@@ -20,7 +19,3 @@ class PipelineCOI(Pipeline):
             "originalTaxonRank": fn.original_taxon_rank,
             "originalScientificNameConfidenceLevel": fn.original_scientific_name_confidence_level,
         })
-
-        # input
-        self.ptax = PTAXDataFrame(time_window, data_release).fetch()
-

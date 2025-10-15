@@ -2,7 +2,7 @@
     "occurrenceID": "<NULL>",
     "basisOfRecord": "MaterialSample",
     "institutionCode": "ARMS-MBON",
-    "datasetName": "data_release_002",
+    "datasetName": "<NULL>",
     "occurrenceStatus": "present",
     "eventID": "<NULL>",
     "materialSampleID": "<NULL>",
@@ -31,6 +31,6 @@
     "scientificName": "<NULL>",
     "taxonRank": "<NULL>",
     "taxonId": "<NULL>",
-    "taxonConcept": "<NULL>",
+    "taxonConceptID": "<NULL>",
     "catalogNumber": "<NULL>"
 }

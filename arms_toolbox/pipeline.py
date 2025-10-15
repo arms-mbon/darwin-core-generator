@@ -1,10 +1,10 @@
 """
 TODO separate transform from load
 """
-import traceback
+# import traceback  # TODO log instead of print
 import arms_toolbox.function as fn
 from tqdm import tqdm
-from .data_source import ObservatoryDataFrame, OmicsDataFrame, SamplingDataFrame, MDAFasta, PEMADataFrame
+from .data_source import ObservatoryDataFrame, OmicsDataFrame, SamplingDataFrame, MDAFasta, PEMADataFrame, PTAXDataFrame
 from .data_sink import OccurrenceCore, DNAExtension, ExtendedMeasurementOrFactsExtension
 from .parameter import EMOFProperties
 import logging
@@ -12,11 +12,12 @@ import logging
 logger = logging.getLogger(__name__)
 
 class Pipeline:
-    def __init__(self, genomic_region, time_window, aligned_assignment_url, data_release):
+    def __init__(self, genomic_region, time_window, aligned_assignment_url, dataset_name, data_release):
         # parameters
         self.genomic_region = genomic_region
         self.time_window = time_window
         self.aligned_assignment_url = aligned_assignment_url
+        self.dataset_name = dataset_name
         self.data_release = data_release
         self.emof_properties = EMOFProperties  # TODO refactor this
         self.emof_functions = {  # TODO refactor this
@@ -32,6 +33,7 @@ class Pipeline:
         self.omics_df = OmicsDataFrame().fetch()
         self.sampling_df = SamplingDataFrame().fetch()
         self.pema_df = PEMADataFrame(self.genomic_region, self.time_window, self.data_release).fetch()
+        self.ptax_df = PTAXDataFrame(self.genomic_region, self.time_window, self.data_release).fetch()
         self.mda_fasta = MDAFasta(self.genomic_region, self.aligned_assignment_url).fetch()
         
         # output
@@ -56,9 +58,16 @@ class Pipeline:
                 continue
             for _, pema in self.pema_df_gt.iterrows():
                 self.pema = pema
-                self.occurrence_id = f"{self.rmsi}:{self.pema['OTU']}"
                 self.pema_tree = self.pema["Classification"]
                 self.pema_leaf = self.pema["TAXON:NCBI_TAX_ID"]
+                self.ptax = None
+                if self.ptax_df is not None:
+                    query_result = self.ptax_df.query(f"amplicon == '{self.pema["OTU"].split(":")[1]}'")
+                    if query_result.empty:
+                        continue
+                    else:
+                        self.ptax = query_result.iloc[0]
+                self.occurrence_id = f"{self.rmsi}:{self.pema['OTU']}"
                 try:
                     if self.pema_tree.lower() == "not found" and self.pema_leaf.lower() == "not found":
                         raise AssertionError(f"{self.occurrence_id} has missing taxonomic classification")
@@ -99,7 +108,6 @@ class Pipeline:
         # pema_df_gt (the others are a pd.Series, but this will still be a pd.DataFrame)
         self.pema_df_gt = self.pema_df[self.pema_df[self.rmsi] > 1]
 
-
     def _transform_and_load_occurrence_core(self):
         self.occurrence_core.add_node(
             occurrenceID=self.occurrence_id,  # node identifier
@@ -120,12 +128,13 @@ class Pipeline:
             occurrenceRemarks=fn.occurrence_remarks(self.pema_leaf),
             eventRemarks=fn.event_remarks(self.sampling),
             verbatimIdentification=fn.verbatim_identification(self.pema_tree),
-            scientificNameID=fn.scientific_name_id(self.pema_leaf, self.pema_tree),
-            scientificName=fn.scientific_name(self.pema_leaf, self.pema_tree),
-            taxonRank=fn.taxon_rank(self.pema_leaf, self.pema_tree),
+            scientificNameID=fn.scientific_name_id(self.pema_leaf, self.pema_tree, self.ptax),
+            scientificName=fn.scientific_name(self.pema_leaf, self.pema_tree, self.ptax),
+            taxonRank=fn.taxon_rank(self.pema_leaf, self.pema_tree, self.ptax),
             taxonId=self.pema["OTU"],
-            taxonConcept=f"NCBI:{self.pema_leaf.split(':')[-1]}", # TODO fn
+            taxonConceptID=f"NCBI:{self.pema_leaf.split(':')[-1]}", # TODO fn
             catalogNumber=self.sampling["ReplicateMaterialSampleID"],
+            datasetName=self.dataset_name,
         )
     
     def _transform_and_load_dna_extension(self):
@@ -133,7 +142,7 @@ class Pipeline:
             occurrenceID=self.occurrence_id,  # node identifier
             env_broad_scale=self.observatory["ENVO broad scale"],
             env_local_scale=self.observatory["ENVO local scale"],
-            env_medium_scale=self.observatory["ENVO medium scale"],
+            env_medium=self.observatory["ENVO medium scale"],
             DNA_Sequence=fn.dna_sequence(self.pema["OTU"], self.mda_fasta, self.genomic_region),
         )
     
@@ -146,20 +155,21 @@ class Pipeline:
                     omics=self.omics,
                     sampling=self.sampling,
                     pema=self.pema,
-                    ptax=self.ptax if self.genomic_region == "COI" else None
+                    ptax=self.ptax
                 )
             else:
                 mv = p["measurementValue"]
                 mvid = p["measurementValueID"]
-            self.extended_measurement_or_facts_extension.add_node(
-                occurrenceID=self.occurrence_id,  # node identifier
-                measurementType=p["measurementType"],
-                measurementUnit=p["measurementUnit"],
-                measurementValue=mv,
-                measurementTypeID=p["measurementTypeID"],
-                measurementUnitID=p["measurementUnitID"],
-                measurementValueID=mvid,
-            )
+            if mv:
+                self.extended_measurement_or_facts_extension.add_node(
+                    occurrenceID=self.occurrence_id,  # node identifier
+                    measurementType=p["measurementType"],
+                    measurementUnit=p["measurementUnit"],
+                    measurementValue=mv,
+                    measurementTypeID=p["measurementTypeID"],
+                    measurementUnitID=p["measurementUnitID"],
+                    measurementValueID=mvid,
+                )
 
     def _serialize(self):
         self.occurrence_core.serialize()

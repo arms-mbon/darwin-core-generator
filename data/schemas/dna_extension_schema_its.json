@@ -2,7 +2,7 @@
     "occurrenceID": "<NULL>",
     "env_broad_scale": "<NULL>",
     "env_local_scale": "<NULL>",
-    "env_medium_scale": "<NULL>",	
+    "env_medium": "<NULL>",	
     "DNA_Sequence": "<NULL>", 
     "SOP": "https://github.com/arms-mbon/documentation/tree/main/standard_operating_procedures/ARMS_MolecularSOPs_v1.0.pdf  | https://hariszaf.github.io/pema_documentation/ | https://github.com/arms-mbon/analysis_release_002/tree/main/parameter_files",
     "target_gene": "ITS",
