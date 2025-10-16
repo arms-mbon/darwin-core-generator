@@ -8,6 +8,8 @@ The [second version of the code](https://github.com/arms-mbon/darwin-core-genera
 
 For the first data release, the respective DwC CSV files were organised following the recommendations in [this GBIF paper](https://docs.gbif.org/publishing-dna-derived-data/en/) and those data were submitted to OBIS. For the second data release, for which these intention is to submit to EurOBIS, we followed their slightly different recommendations. One change is that the scientificName and scientificNameId in the occurrence.CSV file should be either one that can be found in [WoRMS](https://www.marinespecies.org/) or which is listed as an "official" name in the Catalogue of Life (using its [APIs](https://api.catalogueoflife.org/)). Where these fields are blank, the taxonomic classification produced by the reference library used in PEMA, and the associated NCBI ID (where present), are still given. 
 
+Note that the code has some hard-coded values and some particulars unique to our desires with our data. These are described in the [arms_toolbox](https://github.com/arms-mbon/darwin-core-generator/tree/main/arms_toolbox) folder. 
+
 ## Local usage and testing
 
 To run the code, use main.py (see further instructions below) and that calls on the other python codes in the folder arms_toolbox. In here you specify the location of the fasta files produced by PEMA (being stored in the Marine Data Archive for our data) and hard code a few other details. More hard-coding of inputs and values can be found in the "schemas" files in "data" (e.g. [here](https://github.com/arms-mbon/darwin-core-generator/tree/main/data/dr001/schemas) for data release 001 and [here](https://github.com/arms-mbon/darwin-core-generator/tree/main/data/schemas) for data release 002).   
