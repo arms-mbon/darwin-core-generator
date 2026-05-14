@@ -39,16 +39,16 @@ Tax_assigments
 ## Corrections applied in the COI dataset of data_release_001
 
 Since the code was not working properly, there were species level identifications in the dataset with very low confidence estimates. 
-These identifications have now been corrected using ARMS_issues.R
+These identifications have now been corrected using [ARMS_issues.R]([url](https://github.com/arms-mbon/darwin-core-generator/blob/main/arms_toolbox/ARMS_issues.R)). The image is also available [here]([url](https://github.com/arms-mbon/darwin-core-generator/blob/main/arms_toolbox/ARMS_issues.RData)). 
 
 Also, in cases where confidence estimates were higher than 0.8 only at the Kingdom level (i.e. Eukaryota), these occurrences are now reported as Biota incertae sedis because it may be very likely that they actually belong in another Kingdom and not even in the Eukaryota kingdom.
 
-The updated dataset can be found at here
+The updated dataset can be found [here]([url](https://github.com/arms-mbon/data_release_001/blob/main/ARMS_COI_Occurrence_corrected.txt)).
 
 After the confidence estimate corrections, the dataset was uploaded in the [geographic outlier detection tool of OBIS]([url](https://ednaqc.obis.org)).
 Based on the tool, density values close to zero indicate occurrence of taxa outside of their known distributions. 
 Also, suitability values close to zero indicate occurrence of taxa outside of their known temperature preference. 
-Low density scores combined with high suitability scores may indicate a detection of an introduced taxon. However, low density scores combined with low suitability scores indicate likely erroenous identifications. Based on the above, annotations were either accepted or rejected and relevant information was added in the comments. The annotated are provided here and here.
+Low density scores combined with high suitability scores may indicate a detection of an introduced taxon. However, low density scores combined with low suitability scores indicate likely erroenous identifications. Based on the above, annotations were either accepted or rejected and relevant information was added in the comments. The annotated are provided [here]([url](https://github.com/arms-mbon/data_release_001/blob/main/ARMS_COI_Occurrence_corrected_annotations.json)) and [here]([url](https://github.com/arms-mbon/data_release_001/blob/main/ARMS_COI_Occurrence_corrected_annotations_old_format.json)).
 
 
 
