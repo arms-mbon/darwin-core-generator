@@ -36,3 +36,9 @@ Tax_assigments
 * For 18S and ITS there is no such file
 * For COI it is the same as in the fasta file
 
+## Corrections applied in the COI dataset of data_release_001
+
+Since the code was not working properly, there were species level identifications in the dataset with very low confidence estimates. 
+These identifications have now been corrected using ARMS_issues.R
+The updated dataset can be found at 
+Also, in cases where confidence estimates were higher than 0.8 only at the Kingdom level (i.e. Eukaryota), these occurrences were reported as Biota incertae sedis because it may be very likely that they actually belong in another Kingdom.
