@@ -23,7 +23,7 @@ https://cpavloud.github.io/mysite/
 ############################LOAD LIBRARIES #######################################
 
 # List of packages needed
-.packages = c("naniar", "dplyr", "tidyr", "obistools", "stringr", "tidyverse", "readxl")
+.packages = c("naniar", "dplyr", "obistools", "tidyverse")
 
 # Install CRAN packages (if not already installed)
 .inst <- .packages %in% installed.packages()
@@ -34,37 +34,15 @@ lapply(.packages, require, character.only=TRUE)
 
 packageVersion("naniar")
 packageVersion("dplyr")
-packageVersion("tidyr")
 packageVersion("obistools")
-packageVersion("stringr")
 packageVersion("tidyverse")
-packageVersion("readxl")
-
-# Define a default theme for ggplot graphics
-theme_set(theme_bw()) 
 
 ################################################################################
 ################################################################################
 ################################################################################
 
-library(dplyr)
-library(tidyverse)
-library(naniar)
-library(obistools)
-
-
-
-library(tidyr)
-library(data.table)
-library(stringr)
-library(readxl)
-
-################################################################################
-################################################################################
-################################################################################
-
-getwd()
-setwd("/Users/christina/EMBRC Dropbox/Christina Pavloudi/EMOBON/ARMS_issues/")
+#getwd()
+#setwd("")
 
 ################################################################################
 ################################################################################
