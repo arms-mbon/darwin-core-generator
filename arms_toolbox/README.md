@@ -41,7 +41,15 @@ Tax_assigments
 Since the code was not working properly, there were species level identifications in the dataset with very low confidence estimates. 
 These identifications have now been corrected using ARMS_issues.R
 
-Also, in cases where confidence estimates were higher than 0.8 only at the Kingdom level (i.e. Eukaryota), these occurrences were reported as Biota incertae sedis because it may be very likely that they actually belong in another Kingdom.
+Also, in cases where confidence estimates were higher than 0.8 only at the Kingdom level (i.e. Eukaryota), these occurrences are now reported as Biota incertae sedis because it may be very likely that they actually belong in another Kingdom and not even in the Eukaryota kingdom.
 
-The updated dataset can be found at 
+The updated dataset can be found at here
+
+After the confidence estimate corrections, the dataset was uploaded in the [geographic outlier detection tool of OBIS]([url](https://ednaqc.obis.org)).
+Based on the tool, density values close to zero indicate occurrence of taxa outside of their known distributions. 
+Also, suitability values close to zero indicate occurrence of taxa outside of their known temperature preference. 
+Low density scores combined with high suitability scores may indicate a detection of an introduced taxon. However, low density scores combined with low suitability scores indicate likely erroenous identifications. Based on the above, annotations were either accepted or rejected and relevant information was added in the comments. 
+
+
+
 
