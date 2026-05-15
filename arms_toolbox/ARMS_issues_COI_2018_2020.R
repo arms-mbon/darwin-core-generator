@@ -335,9 +335,9 @@ write.table(ARMS_COI_2018_2020_occurrence, "dwca-arms_coi_2018-20-v1/occurrence_
 ################################################################################
 ################################################################################
 
-save.image("ARMS_issues.RData")
+save.image("ARMS_issues_COI_2018_2020.RData")
 #creating ".RData" in current working directory
 #to save the basic files
 
 #Now you have everything in your computer, and you can load it anytime you want by running
-#load("ARMS_issues.RData")
+#load("ARMS_issues_COI_2018_2020.RData")
