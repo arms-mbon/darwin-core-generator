@@ -50,6 +50,10 @@ Based on the tool, density values close to zero indicate occurrence of taxa outs
 Also, suitability values close to zero indicate occurrence of taxa outside of their known temperature preference. 
 Low density scores combined with high suitability scores may indicate a detection of an introduced taxon. However, low density scores combined with low suitability scores indicate likely erroenous identifications. Based on the above, annotations were either accepted or rejected and relevant information was added in the comments. The annotated are provided [here](https://github.com/arms-mbon/data_release_001/blob/main/ARMS_COI_Occurrence_corrected_annotations.json) and [here](https://github.com/arms-mbon/data_release_001/blob/main/ARMS_COI_Occurrence_corrected_annotations_old_format.json).
 
+## Corrections applied in the COI dataset of data_release_002
 
+As mentioned in the previous section, the COI dataset for data_release_002 has been corrected, using [ARMS_issues_COI_2020_2021.R](https://github.com/arms-mbon/darwin-core-generator/blob/main/arms_toolbox/ARMS_issues_COI_2020_2021.R). The image is also available [here](https://github.com/arms-mbon/darwin-core-generator/blob/main/arms_toolbox/ARMS_issues_COI_2020_2021.RData).
+
+The updated dataset can be found [here](https://github.com/arms-mbon/data_release_002/blob/main/ARMS_COI_Occurrence_corrected.txt).
 
 
