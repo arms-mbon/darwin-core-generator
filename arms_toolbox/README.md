@@ -56,4 +56,9 @@ As mentioned in the previous section, the COI dataset for data_release_002 has b
 
 The updated dataset can be found [here](https://github.com/arms-mbon/data_release_002/blob/main/ARMS_COI_Occurrence_corrected.txt).
 
+## Corrections applied in the 18S dataset of data_release_001
+
+The dataset was corrected since the primer references were wrong. 
+
+The updated dataset can be found [here](https://github.com/arms-mbon/data_release_001/blob/main/ARMS_18S_DNAextension_corrected.txt).
 
