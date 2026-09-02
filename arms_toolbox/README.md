@@ -187,7 +187,7 @@ Occurrence and DNA-extension schemas are marker-specific. The eMoF table uses th
 
 ### `graphoid.py`
 
-`Graphoid` is the internal schema-backed table abstraction used by the output classes. Despite its graph-oriented interface, its current backing implementation is a Pandas `DataFrame`. A JSON schema determines the available columns and their default values. `add_node()` appends a row and `serialize()` creates the destination directory before writing the DataFrame as CSV. The code describes this abstraction as an intermediate step toward a possible object-graph mapper (cf. [Darwin Core RDF Guide](https://dwc.tdwg.org/rdf/)).
+`Graphoid` is the internal schema-backed table abstraction used by the output classes. Despite its graph-oriented interface, its current backing implementation is a Pandas `DataFrame`. A JSON schema determines the available columns and their default values. `add_node()` appends a row and `serialize()` creates the destination directory before writing the DataFrame as CSV. The code describes this abstraction as an intermediate step toward a possible object-graph mapper (cf. [py-sema's OGM](https://github.com/vliz-be-opsci/py-sema/tree/main/sema/commons/ogm) & [Darwin Core RDF Guide](https://dwc.tdwg.org/rdf/)).
 
 ```python
 graph = Graphoid("output.csv", "schema.json")
