@@ -59,7 +59,7 @@ pip install -r requirements.txt
 
 ## Running a pipeline
 
-A minimal invocation is:
+A minimal invocation is, for example:
 
 ```python
 from arms_toolbox.pipeline_18s import Pipeline18S
