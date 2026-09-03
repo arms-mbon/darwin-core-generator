@@ -125,7 +125,7 @@ class Pipeline:
             minimumDepthInMeters=self.observatory["Depth_min"],
             maximumDepthInMeters=self.observatory["Depth_max"],
             habitat=fn.habitat(self.observatory),
-            occurrenceRemarks=fn.occurrence_remarks(self.pema_leaf),
+            occurrenceRemarks=fn.occurrence_remarks(self.observatory, self.pema_leaf),
             eventRemarks=fn.event_remarks(self.sampling),
             verbatimIdentification=fn.verbatim_identification(self.pema_tree),
             scientificNameID=fn.scientific_name_id(self.pema_leaf, self.pema_tree, self.ptax),

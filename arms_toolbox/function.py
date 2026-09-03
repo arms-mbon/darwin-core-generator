@@ -251,13 +251,21 @@ def habitat(observatory: pd.Series):
         observatory["IUCN habitat type"].strip(),
     ])
 
-def occurrence_remarks(pema_leaf):
+def occurrence_remarks(observatory: pd.Series, pema_leaf):
     _, ncbi_tax_id = _parse_pema_leaf(pema_leaf)
     atax = _get_aphia_taxonomy(ncbi_tax_id)
+
     if str(atax.get("isTerrestrial")) == "1":
-        return "uncertain classification (not marine)"
+        aphia_remark = "uncertain classification (not marine)"
     else:
-        return ""
+        aphia_remark = ""
+
+    observatory_remark = observatory["Notes"].strip()
+
+    return "; ".join([
+        observatory_remark,
+        aphia_remark
+    ])
 
 def event_remarks(sampling: pd.Series):
     crate_cover = sampling["CrateCover"]
@@ -291,7 +299,10 @@ def scientific_name(pema_leaf, pema_tree, ptax):
         pema_tree=pema_tree,
     )
 
-    return scientific_name 
+    if scientific_name == "Eukaryota":
+        return "Biota incertae sedis"
+    else:
+        return scientific_name 
 
 def taxon_rank(pema_leaf, pema_tree, ptax):
     if ptax is not None:
@@ -299,12 +310,15 @@ def taxon_rank(pema_leaf, pema_tree, ptax):
         pema_leaf = reliable_taxon["ptax_leaf"]
         pema_tree = reliable_taxon["ptax_tree"]
 
-    _, _, taxon_rank = _walk_phylogeny(
+    _, scientific_name, taxon_rank = _walk_phylogeny(
         pema_leaf=pema_leaf,
         pema_tree=pema_tree,
     )
 
-    return taxon_rank
+    if scientific_name == "Eukaryota":
+        return "Kingdom"
+    else:
+        return taxon_rank
 
 def dna_sequence(otu, mda_fasta, genomic_region):
     if genomic_region == "COI": # grouped
