@@ -141,7 +141,7 @@ Pipeline(
 )
 ```
 
-The constructor records the marker region, sampling time window, MDA FASTA URL, target dataset, and ARMS-MBON data-release identifier. It also installs the mapping between eMoF properties and the transformation functions defined in `function.py`. During execution the pipeline loads its remote data sources, iterates through replicate material sample IDs, joins the relevant sampling and omics records, iterates over taxonomic assignments, creates an occurrence identifier, transforms the records into Darwin Core fields, and finally serializes the output tables. Extraction or transformation failures are logged and processing continues with subsequent records.
+The constructor records the marker region, sampling time window, URL of the FASTA files in the Marine Data Archive, target dataset, and ARMS-MBON data-release identifier. It also installs the mapping between eMoF properties and the transformation functions defined in `function.py`. During execution the pipeline loads its remote data sources, iterates through replicate material sample IDs, joins the relevant sampling and omics records, iterates over taxonomic assignments, creates an occurrence identifier, transforms the records into Darwin Core fields, and finally serializes the output tables. Extraction or transformation failures are logged and processing continues with subsequent records.
 
 The occurrence identifier is constructed from the replicate material sample identifier and the PEMA OTU identifier:
 
