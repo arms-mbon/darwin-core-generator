@@ -151,9 +151,11 @@ occurrence_id = f"{ReplicateMaterialSampleID}:{OTU}"
 
 Taxonomic records where both the classification and NCBI taxon identifier are reported as `not found` are rejected. Sampling metadata are also required to contain exactly one record for each replicate material sample ID being processed.
 
+The code will ignore results in the PEMA output that have an "abundance" value of <=1. 
+
 ### Marker-specific pipelines
 
-`Pipeline18S` fixes `genomic_region="18S"`. `PipelineITS` behaves equivalently with `genomic_region="ITS"`. `PipelineCOI` fixes `genomic_region="COI"` and extends the eMoF transformation map with `originalScientificName`, `originalTaxonRank`, and `originalScientificNameConfidenceLevel`.
+`Pipeline18S` fixes `genomic_region="18S"`. `PipelineITS` behaves equivalently with `genomic_region="ITS"`. `PipelineCOI` fixes `genomic_region="COI"` and extends the eMoF transformation map with `originalScientificName`, `originalTaxonRank`, and `originalScientificNameConfidenceLevel`. 
 
 ### `data_source.py`
 
