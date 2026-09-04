@@ -10,6 +10,14 @@ For the first data release, the  DwC was organised following the recommendations
 
 Note that the code has some hard-coded values and some particulars unique to our desires with our data. These are described in the [arms_toolbox](https://github.com/arms-mbon/darwin-core-generator/tree/main/arms_toolbox) folder. 
 
+## Dealing with taxonomic names
+
+The current version (V2, Sept 2026) of the code has some if-the-else's regarding the reporting of taxon names. Eur(OBIS) requires that, where available, WoRMS names are reported over NBCI ones: therefor the code does a match on the NCBI IDs returned by PEMA to the AphiaIDs, using the REST APIs from MarineSpecies. The scienficName and ID fields are filled with these values. If no match is found for the NCBI-reported taxon name at the reported taxon rank, the code goes up to a broader level (e.g. species to genus) using ENA rest APIs, and looks again. Where no match is ever found, no value is reported. Note that this behaviour will be modified somewhat in the next version of the code. 
+
+A check on the taxon names is then made with Catalogue of Life, using its APIs. If a match is found in CoL and not in WoRMS, the CoL name is used as the scientificName.
+
+Note that in addition, the output files from PEMA are processed before being fed into the DwC generator, to perform taxon-name cleanup. The code for doing this can be found in [https://github.com/arms-mbon/code_release_001](https://github.com/arms-mbon/code_release_001) and [https://github.com/arms-mbon/code_release_002](https://github.com/arms-mbon/code_release_002) for the two versions of these ARMS data that we have so-far processed.   
+
 ## Local usage and testing
 
 To run the code, use main.py (see further instructions below) and that calls on the other python codes in the folder arms_toolbox. In here you specify the location of the fasta files produced by PEMA (being stored in the Marine Data Archive for our data) and hard code a few other details. More hard-coding of inputs and values can be found in the "schemas" files in "data" (e.g. [here](https://github.com/arms-mbon/darwin-core-generator/tree/main/data/dr001/schemas) for data release 001 and [here](https://github.com/arms-mbon/darwin-core-generator/tree/main/data/schemas) for data release 002).   
