@@ -3,10 +3,10 @@
 ## History
 This code is tuned for ARMS-MBON data produced by the PEMA bioinformatics pipeline for 18S, ITS, and COI. The code takes all of its data from various repositories in this GitHub space to gather the samping event data, taxonomic classifications, ASVs, and processing provenance metadata needed to fill the DwC (occurrence, DNA, EMOF) with a focus on EurOBIS as the data infrastructure to submit these to.
 
-The [first version of the code](https://github.com/arms-mbon/darwin-core-generator/tree/main/arms_toolbox_dr001) was run on the first ARMS-MBON data release/data publication: the data associated with the repositories [https://github.com/arms-mbon/data_release_001](https://github.com/arms-mbon/data_release_001), [https://github.com/arms-mbon/analysis_release_001](https://github.com/arms-mbon/analysis_release_001), and [https://github.com/arms-mbon/code_release_001](https://github.com/arms-mbon/code_release_001). 
-The [second version of the code](https://github.com/arms-mbon/darwin-core-generator/tree/main/arms_toolbox_dr002) was created to submit the data of the second ARMS-MBON data release/data publication: the data associated with the repositories [https://github.com/arms-mbon/data_release_002](https://github.com/arms-mbon/data_release_002), [https://github.com/arms-mbon/analysis_release_002](https://github.com/arms-mbon/analysis_release_002), and [https://github.com/arms-mbon/code_release_002](https://github.com/arms-mbon/code_release_002). This code takes some inputs from the [data](https://github.com/arms-mbon/darwin-core-generator/tree/main/data) folder. 
+The [first version of the code](https://github.com/arms-mbon/darwin-core-generator/tree/main/arms_toolbox_dr001) was run on the first ARMS-MBON data release/data publication: the data in the repositories [https://github.com/arms-mbon/data_release_001](https://github.com/arms-mbon/data_release_001), [https://github.com/arms-mbon/analysis_release_001](https://github.com/arms-mbon/analysis_release_001), and [https://github.com/arms-mbon/code_release_001](https://github.com/arms-mbon/code_release_001). 
+The [second version of the code](https://github.com/arms-mbon/darwin-core-generator/tree/main/arms_toolbox_dr002) was created to submit the data of the second ARMS-MBON data release/data publication: the data in the repositories [https://github.com/arms-mbon/data_release_002](https://github.com/arms-mbon/data_release_002), [https://github.com/arms-mbon/analysis_release_002](https://github.com/arms-mbon/analysis_release_002), and [https://github.com/arms-mbon/code_release_002](https://github.com/arms-mbon/code_release_002). 
 
-For the first data release, the respective DwC CSV files were organised following the recommendations in [this GBIF paper](https://docs.gbif.org/publishing-dna-derived-data/en/) and those data were submitted to OBIS. For the second data release, for which these intention is to submit to EurOBIS, we followed their slightly different recommendations. One change is that the scientificName and scientificNameId in the occurrence.CSV file should be either one that can be found in [WoRMS](https://www.marinespecies.org/) or which is listed as an "official" name in the Catalogue of Life (using its [APIs](https://api.catalogueoflife.org/)). Where these fields are blank, the taxonomic classification produced by the reference library used in PEMA, and the associated NCBI ID (where present), are still given. 
+For the first data release, the  DwC was organised following the recommendations in [this GBIF paper](https://docs.gbif.org/publishing-dna-derived-data/en/) and those data were submitted to OBIS. For the second data release, for which these intention was to submit to EurOBIS, we followed their slightly different recommendations. One change that this necessitated is that the scientificName and scientificNameId in the occurrence.CSV file should be either one that can be found in [WoRMS](https://www.marinespecies.org/) or which is listed as an "official" name in the Catalogue of Life (using its [APIs](https://api.catalogueoflife.org/)). For all cases, the classification produced by the reference library used in PEMA, and the associated NCBI ID (where present), are also included in the occurrence file. 
 
 Note that the code has some hard-coded values and some particulars unique to our desires with our data. These are described in the [arms_toolbox](https://github.com/arms-mbon/darwin-core-generator/tree/main/arms_toolbox) folder. 
 
@@ -16,7 +16,7 @@ To run the code, use main.py (see further instructions below) and that calls on 
 
 
 ### On Linux
-Note: we only give the linux-style shell commands here. For users on Windows we recommend simply exploiting these exact same commands as they are supported in the "terminal" mode of the popular MS Virtual Code tool.
+Note: we only give the linux-style shell commands here. Users on Windows can exploit these exact same commands as they are supported in the "terminal" mode of the popular MS Virtual Code tool, or see the instructions below.
 
 Still YMMV and practical execution on your platform might uncover untested / unwanted effects. So pls let us know if important changes and clarifications should be made.
 
@@ -80,7 +80,7 @@ Python 3.12.4                  # should be <4.0,>=3.12
 (venv) $ python main.py
 ```
 
-### Windows
+### On Windows
 
 For users on Windows we recommend simply exploiting these exact same commands as above and as they are supported in the "terminal" mode of the popular MS Virtual Code tool.
 
