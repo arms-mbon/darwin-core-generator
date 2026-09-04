@@ -204,6 +204,8 @@ Contains the transformation functions used to populate Darwin Core and eMoF valu
 
 When adding a new derived field, the recommended procedure is to implement its transformation in `function.py`, add the appropriate schema/property definition under `data/schemas`, and register the function in `Pipeline.emof_functions` or the appropriate marker subclass.
 
+See [https://github.com/arms-mbon/darwin-core-generator/blob/main/README.md](https://github.com/arms-mbon/darwin-core-generator/blob/main/README.md) for some information about dealing with taxon names, actions which are done in function.py
+
 ### `parameter.py`
 
 Loads eMoF property definitions when the module is imported:
