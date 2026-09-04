@@ -94,6 +94,7 @@ VLIZ Marine Data Archive
 darwin-core-generator/data/schemas
 └── Darwin Core schema files
 ```
+Note that the filenames are specific to the PEMA outputs.
 
 ## Outputs
 
