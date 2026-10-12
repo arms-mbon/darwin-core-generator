@@ -5,7 +5,7 @@ Here you find the code in arms_toolbox modified to run specifically on the ARMS-
 We have applied some checks to the taxonomic names provided by PEMA, to confirm to the expectations of EurOBIS.
 * We only take results that have a quantity value of >1
 * For COI, where confidence levels are reported for each name in the taxonomic classification assigned to the ASVs, we only report the ScientificName in the occurrence.csv file that has a level >=0.8. So if the ScientificName found by PEMA is less than this, we go down the taxonomic classification (i.e. to the next less-specific level) and check that one. The first that has a level >=0.8 is the one accepted. 
-* Where a scientific name is not also found in the Catalogue of Life, then we (again, for COI) go down the taxonomic classification (i.e. to the next less-specific level) and check that one. The first name that _is_ in the CoF is accepted as the ScientificName to report
+* Where a scientific name is not also found in the Catalogue of Life, then we (again, for COI) go down the taxonomic classification (i.e. to the next less-specific level) and check that one. The first name that _is_ in the CoL is accepted as the ScientificName to report
 * Where a ScientificName cannot be found in WoRMS (there is no aphia ID), then we simply return no scientificNameID
 * In the occurrence.csv file, the full taxonomic classiciation returned by PEMA is included, as well as the NCBI ID for the scientific name that it found. So this original information is preserved. 
 * In the emof.csv file, for COI we report the original scientific name and confidence level that was found by PEMA. So this original information is preserved.
