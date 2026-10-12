@@ -1,41 +1,11 @@
 ## Description 
 
-This code is _not_ part of the DwC generator, however it _is_ part of the ARMS-MBON struggle to create DwC files for submission to EurOBIS with suitable taxonomic information. These scripts were created to make modifications to the taxonomic names arising out of the ARMS-MBON data release 001. These corrections were implemented in the DwC generator code run for data release 002; further modifications - hopefully the final ones - will be in place for data release 003, and these will be retrospectively applied to data releases 001 and 002.
+### The xxx.RData files
+Are the R scripts (see below) in R format
 
-This code is is written to run specifically on the ARMS-MBON data, 18S, ITS, and COI as provided by the PEMA pipeline v 2.1.4.  This means it is tuned to the column names and file formatting (OTU/ASV, taxonomy tables, and fasta files) from this version of PEMA, and is tuned to the names we have given to the respective files. These files can be found in  [analysis_release_001](https://github.com/arms-mbon/analysis_release_001) and [data_release_001](https://github.com/arms-mbon/data_release_001) for the first data release, and [analysis_release_002](https://github.com/arms-mbon/analysis_release_002) and [data_release_002](https://github.com/arms-mbon/data_release_002) for the second. The code takes runs on these data, with their specific filenames.
+ ### The xxx.R files
+This code is _not_ part of the DwC generator, however it _is_ part of the ARMS-MBON struggle to create DwC files for submission to EurOBIS with suitable taxonomic information. These scripts were created to make modifications to the taxonomic names arising out of the ARMS-MBON COI data as provided by the PEMA pipeline v 2.1.4. These corrections were at the same time also implemented in the DwC generator code run for data release 002; further modifications - hopefully the final ones - will be in place for data release 003, and these will be retrospectively applied to data releases 001 and 002. Hence, the code here is stand-alone and was not as-is included in the DwC generator code. The file and column names are as produced by ARMS-MBON using that version of PEMA, and there are some hard-coded taxonomic name corrections included. 
 
-These are the checks to the taxonomic names provided by this code:
-* For COI, where confidence levels are reported for each name in the taxonomic classification assigned to the ASVs, we only report the ScientificName in the occurrence.csv file that has a level >=0.8. So if the ScientificName found by PEMA is less than this, we go up the taxonomic classification (i.e. to the next less-specific level) and check that one. The first that has a level >=0.8 is the one accepted. 
-* For COI, where a scientific name is not also found in the Catalogue of Life, then we go up the taxonomic classification (i.e. to the next less-specific level) and check that one. The first name that _is_ in the CoL is accepted as the ScientificName to report
-* Where a ScientificName cannot be found in WoRMS (there is no aphia ID), then we simply return no scientificNameID
-* The full taxonomic classiciation returned by PEMA is included in the occurrence.csv file, as well as the NCBI ID for the scientific name that it found. So this original information is preserved. 
-* In the emof.csv file, for COI we report the original scientific name and confidence level that was found by PEMA. So this original information is preserved.
-We use APIs from WoRMS, CoL, and ENA to get the various IDs that are required when doing this if-then-elseing. 
-
-Other notes
-* The emof schema can be optimised to the gene type.
-* This code is designed to be run over several input files whoes name differ by gene type (18S and ITS) and date (e.g. July2020).
-* The output is added to data/outputs.
-* Checks for duplicates and missing information are performed - for duplicates, a warning is logged and the first only is taken.
-* We only take those results with a "quantity" value in the OTU table that is >1.
-* A check on ENA to find the sample accession numbers for the run accession numbers that we have in the omics input is done.
-* ITS, 18S, and COI differ in that (1) the input files come from different repo folders, (2) COI has more in the emof and takes that from a PEMA file that only exists for this one
-
-Please read the comments in the code before using it!
-
-## The IDs in the input files used for this data_release_001 processing:
-
-Extended_final_table (col 1)
-* For 18S and ITS, it is Otu###
-* For COI it is ASV_##:#########(long number)
-
-Fasta files (these are read in via main.py)
-* For 18S and ITS it is the same Otu###
-* for COI it is (grrrrr!) #######(long number)_####, i.e. the second part of that from the Extended_final_table with a _(number) appended
-
-Tax_assigments
-* For 18S and ITS there is no such file
-* For COI it is the same as in the fasta file
 
 ## Corrections applied in the COI dataset of data_release_001
 
@@ -53,7 +23,7 @@ Low density scores combined with high suitability scores may indicate a detectio
 
 ## Corrections applied in the COI dataset of data_release_002
 
-As mentioned in the previous section, the COI dataset for data_release_002 has been corrected, using [ARMS_issues_COI_2020_2021.R](https://github.com/arms-mbon/darwin-core-generator/blob/main/arms_toolbox/ARMS_issues_COI_2020_2021.R). The image is also available [here](https://github.com/arms-mbon/darwin-core-generator/blob/main/arms_toolbox/ARMS_issues_COI_2020_2021.RData).
+The COI dataset for data_release_002 has been corrected, using [ARMS_issues_COI_2020_2021.R](https://github.com/arms-mbon/darwin-core-generator/blob/main/arms_toolbox/ARMS_issues_COI_2020_2021.R). The image is also available [here](https://github.com/arms-mbon/darwin-core-generator/blob/main/arms_toolbox/ARMS_issues_COI_2020_2021.RData).
 
 The updated dataset can be found [here](https://github.com/arms-mbon/data_release_002/blob/main/ARMS_COI_Occurrence_corrected.txt).
 
