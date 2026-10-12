@@ -226,3 +226,19 @@ resolve(name)
 ```
 
 This function wraps `ncbi-taxonomist` to remotely resolve a taxonomic name to an NCBI taxonomy identifier. Resolution errors are converted to `None`. Wrapping is required to circumvent the use of the `ncbi-taxonomist` CLI.
+
+## The IDs in the input files 
+Useful notes for anyone reading the DwC generator code:
+
+Extended_final_table (col 1)
+* For 18S and ITS, it is Otu###
+* For COI it is ASV_##:#########(long number)
+
+Fasta files (these are read in via main.py)
+* For 18S and ITS it is the same Otu###
+* for COI it is #######(long number)_####, i.e. the second part of that from the Extended_final_table with a _(number) appended
+
+Tax_assigments
+* For 18S and ITS there is no such file
+* For COI it is the same as in the fasta file
+
