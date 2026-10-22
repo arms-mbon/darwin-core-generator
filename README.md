@@ -18,6 +18,9 @@ A check on the taxon names is then made with Catalogue of Life, using its APIs. 
 
 Note that in addition, the output files from PEMA are processed before being fed into the DwC generator, to perform taxon-name cleanup. The code for doing this can be found in [https://github.com/arms-mbon/code_release_001](https://github.com/arms-mbon/code_release_001) and [https://github.com/arms-mbon/code_release_002](https://github.com/arms-mbon/code_release_002) for the two versions of these ARMS data that we have so-far processed.   
 
+## Documentation
+An explanation of the code - its subroutines, inputs, outputs, and the taxonomic decision tree - can be found in this [DwCGenerator description](https://github.com/arms-mbon/darwin-core-generator/blob/main/DwCGenerator_description.md). Additional explanation of the code can be found in the [arms toolbox repo](https://github.com/arms-mbon/darwin-core-generator/tree/main/arms_toolbox).
+
 ## Local usage and testing
 
 To run the code, use main.py (see further instructions below) and that calls on the other python codes in the folder arms_toolbox. In here you specify the location of the fasta files produced by PEMA (being stored in the Marine Data Archive for our data) and hard code a few other details. More hard-coding of inputs and values can be found in the "schemas" files in "data" (e.g. [here](https://github.com/arms-mbon/darwin-core-generator/tree/main/data/dr001/schemas) for data release 001 and [here](https://github.com/arms-mbon/darwin-core-generator/tree/main/data/schemas) for data release 002).   
